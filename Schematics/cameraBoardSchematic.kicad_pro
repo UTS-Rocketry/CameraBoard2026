@@ -637,6 +637,10 @@
     [
       "68311702-7edf-49e8-b5c7-4acffdefe23d",
       "Can_transceiver"
+    ],
+    [
+      "880da092-1c6b-4dcf-a509-490b22fc0ebc",
+      "usb_type_c"
     ]
   ],
   "text_variables": {}
