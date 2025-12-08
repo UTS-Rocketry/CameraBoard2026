@@ -2905,6 +2905,16 @@
 	)
 	(wire
 		(pts
+			(xy 185.42 83.82) (xy 189.23 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79f1dda9-3aa4-4b5e-95cc-469e2fdd3713")
+	)
+	(wire
+		(pts
 			(xy 140.97 71.12) (xy 144.78 71.12)
 		)
 		(stroke
@@ -2945,6 +2955,26 @@
 	)
 	(wire
 		(pts
+			(xy 185.42 86.36) (xy 189.23 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8204bf82-419f-4d64-8982-5acda29be396")
+	)
+	(wire
+		(pts
+			(xy 185.42 127) (xy 189.23 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83065d36-8aeb-420c-9457-e4937294f268")
+	)
+	(wire
+		(pts
 			(xy 125.73 78.74) (xy 144.78 78.74)
 		)
 		(stroke
@@ -2965,13 +2995,13 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 83.82) (xy 189.23 83.82)
+			(xy 185.42 81.28) (xy 189.23 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "89a64cb3-ea88-44f0-92d1-fe5cd7997dfa")
+		(uuid "859bc1e5-3905-4bc5-b33e-ab13c8df93b8")
 	)
 	(wire
 		(pts
@@ -3032,6 +3062,16 @@
 			(type default)
 		)
 		(uuid "9f5b9884-8fdd-42d7-86df-2047f1b729f6")
+	)
+	(wire
+		(pts
+			(xy 185.42 129.54) (xy 189.23 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4d6fa6a-da77-4a29-8d2d-f1b33f9b9896")
 	)
 	(wire
 		(pts
@@ -3102,16 +3142,6 @@
 			(type default)
 		)
 		(uuid "c0bc024c-fd63-4b0b-9d1e-1566164e93a1")
-	)
-	(wire
-		(pts
-			(xy 189.23 119.38) (xy 185.42 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c65803f5-d248-4e8b-a517-57779ae05a9b")
 	)
 	(wire
 		(pts
@@ -3223,9 +3253,9 @@
 		)
 		(uuid "9f27e8cc-32ee-4cdc-a6f1-b60dbfcd5fd7")
 	)
-	(hierarchical_label "CAN_TX_1"
+	(hierarchical_label "CAN_TX_2"
 		(shape input)
-		(at 189.23 83.82 0)
+		(at 189.23 129.54 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3256,9 +3286,9 @@
 		)
 		(uuid "321217a8-8a4a-46ba-ae12-a08df4dc9a88")
 	)
-	(hierarchical_label "CAN_RX_1"
+	(hierarchical_label "CAN_RX_2"
 		(shape input)
-		(at 189.23 119.38 0)
+		(at 189.23 127 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3277,6 +3307,39 @@
 			(justify right)
 		)
 		(uuid "79f62509-a842-4e4f-a2ab-c01274d117b7")
+	)
+	(hierarchical_label "VBUS"
+		(shape input)
+		(at 189.23 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "872823ac-b802-4724-b6e9-f3a30b687790")
+	)
+	(hierarchical_label "D-"
+		(shape input)
+		(at 189.23 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "96b785af-d460-451e-bd6a-18a1a080cc2b")
+	)
+	(hierarchical_label "D+"
+		(shape input)
+		(at 189.23 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bc563268-844a-4ba5-84cc-b1e969020e29")
 	)
 	(hierarchical_label "CAM_UART_TX"
 		(shape input)
