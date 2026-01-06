@@ -1059,7 +1059,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "03a7a2d9-4b43-4353-a4b1-404c2a2cbe05")
-		(property "Reference" "J_BUCK_OUT_B"
+		(property "Reference" "J_BUCK_OUT_B1"
 			(at 146.05 45.466 0)
 			(effects
 				(font
@@ -1075,7 +1075,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 146.05 52.07 0)
 			(effects
 				(font
@@ -1111,7 +1111,7 @@
 		(instances
 			(project "cameraBoardSchematic"
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/480e1df8-14aa-40df-bf4b-17bab0b9775f"
-					(reference "J_BUCK_OUT_B")
+					(reference "J_BUCK_OUT_B1")
 					(unit 1)
 				)
 			)
@@ -1260,7 +1260,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3afc984e-fed9-44a2-b5ab-7cddc52cf9ee")
-		(property "Reference" "J_BUCK_IN_B"
+		(property "Reference" "J_BUCK_IN_B1"
 			(at 123.19 45.7199 0)
 			(effects
 				(font
@@ -1278,7 +1278,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 120.65 45.72 0)
 			(effects
 				(font
@@ -1314,7 +1314,7 @@
 		(instances
 			(project "cameraBoardSchematic"
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/480e1df8-14aa-40df-bf4b-17bab0b9775f"
-					(reference "J_BUCK_IN_B")
+					(reference "J_BUCK_IN_B1")
 					(unit 1)
 				)
 			)
@@ -1347,7 +1347,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 162.2552 102.87 0)
 			(effects
 				(font
@@ -1417,7 +1417,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 107.6452 102.87 0)
 			(effects
 				(font
@@ -1617,7 +1617,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TO254P1524X483-4N"
+		(property "Footprint" "myFootprints:TO254P1524X483-4N"
 			(at 135.89 97.79 0)
 			(effects
 				(font
@@ -1738,7 +1738,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "aafdb53b-1bfd-459a-befd-543c571d62f5")
-		(property "Reference" "J_BUCK_OUT_A"
+		(property "Reference" "J_BUCK_OUT_A1"
 			(at 140.208 35.56 0)
 			(effects
 				(font
@@ -1756,7 +1756,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 146.05 41.91 0)
 			(effects
 				(font
@@ -1792,7 +1792,7 @@
 		(instances
 			(project "cameraBoardSchematic"
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/480e1df8-14aa-40df-bf4b-17bab0b9775f"
-					(reference "J_BUCK_OUT_A")
+					(reference "J_BUCK_OUT_A1")
 					(unit 1)
 				)
 			)
@@ -1941,7 +1941,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dc357d1e-87ae-4efc-8789-364c01ffb336")
-		(property "Reference" "J_BUCK_IN_A"
+		(property "Reference" "J_BUCK_IN_A1"
 			(at 123.19 39.3699 0)
 			(effects
 				(font
@@ -1959,7 +1959,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 120.65 39.37 0)
 			(effects
 				(font
@@ -1995,7 +1995,7 @@
 		(instances
 			(project ""
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/480e1df8-14aa-40df-bf4b-17bab0b9775f"
-					(reference "J_BUCK_IN_A")
+					(reference "J_BUCK_IN_A1")
 					(unit 1)
 				)
 			)

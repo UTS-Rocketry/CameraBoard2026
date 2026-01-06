@@ -534,7 +534,7 @@
 		)
 		(uuid "01b96c9f-b185-43f2-b2ef-fd0c74bf141d")
 	)
-	(hierarchical_label "CAN_RX_1"
+	(hierarchical_label "CAN_RX_2"
 		(shape input)
 		(at 172.72 104.14 0)
 		(effects
@@ -556,7 +556,7 @@
 		)
 		(uuid "c20df710-b6be-40df-8e1f-2f4f515fc3f8")
 	)
-	(hierarchical_label "CAN_TX_1"
+	(hierarchical_label "CAN_TX_2"
 		(shape input)
 		(at 118.11 99.06 180)
 		(effects
@@ -660,7 +660,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOIC127P599X175-8N"
+		(property "Footprint" "myFootprints:SOIC127P599X175-8N"
 			(at 144.78 104.14 0)
 			(effects
 				(font
