@@ -286,53 +286,29 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "LM3940IS-3.3_NOPB:LM3940IS-3.3_NOPB"
-			(pin_names
-				(offset 1.016)
-			)
+		(symbol "Regulator_Linear:AMS1117-3.3"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "IC"
-				(at -12.7 6.0706 0)
+			(property "Reference" "U"
+				(at -3.81 3.175 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
-			(property "Value" "LM3940IS-3.3_NOPB"
-				(at -12.7 -9.0678 0)
+			(property "Value" "AMS1117-3.3"
+				(at 0 3.175 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
+					(justify left)
 				)
 			)
-			(property "Footprint" "TO254P1524X483-4N"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -340,76 +316,106 @@
 					(hide yes)
 				)
 			)
-			(property "ki_locked" ""
+			(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
+				(at 2.54 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(hide yes)
 				)
 			)
-			(symbol "LM3940IS-3.3_NOPB_0_0"
+			(property "ki_keywords" "linear regulator ldo fixed positive"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?223*TabPin2*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "AMS1117-3.3_0_1"
 				(rectangle
-					(start -12.7 -5.08)
-					(end 12.7 5.08)
+					(start -5.08 -5.08)
+					(end 5.08 1.905)
 					(stroke
-						(width 0.4064)
-						(type solid)
+						(width 0.254)
+						(type default)
 					)
 					(fill
 						(type background)
 					)
 				)
-				(pin input line
-					(at -17.78 2.54 0)
-					(length 5.08)
-					(name "VIN"
+			)
+			(symbol "AMS1117-3.3_1_1"
+				(pin power_in line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "VI"
 						(effects
 							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 17.78 2.54 180)
-					(length 5.08)
-					(name "VOUT"
-						(effects
-							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 					(number "3"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 				)
 				(pin power_in line
-					(at 17.78 -2.54 180)
-					(length 5.08)
+					(at 0 -7.62 90)
+					(length 2.54)
 					(name "GND"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "VO"
+						(effects
+							(font
+								(size 1.27 1.27)
 							)
 						)
 					)
 					(number "2"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -770,12 +776,6 @@
 		)
 	)
 	(junction
-		(at 153.67 106.68)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2ee47631-ae23-4d41-bc81-4ff1a2fcee92")
-	)
-	(junction
 		(at 106.68 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -793,9 +793,15 @@
 		(color 0 0 0 0)
 		(uuid "9e20f085-b280-438e-9633-1b9b68a5d9f3")
 	)
+	(junction
+		(at 134.62 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c63be59e-b99b-4a60-809a-7cbef934e10f")
+	)
 	(wire
 		(pts
-			(xy 106.68 106.68) (xy 153.67 106.68)
+			(xy 106.68 106.68) (xy 134.62 106.68)
 		)
 		(stroke
 			(width 0)
@@ -805,7 +811,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 106.68) (xy 161.29 106.68)
+			(xy 134.62 106.68) (xy 161.29 106.68)
 		)
 		(stroke
 			(width 0)
@@ -865,13 +871,13 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 95.25) (xy 161.29 95.25)
+			(xy 134.62 102.87) (xy 134.62 106.68)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "696b04ad-8dc3-49ba-8db4-668feb56b418")
+		(uuid "66c2699c-43aa-43fa-862e-eb1eebc1e164")
 	)
 	(wire
 		(pts
@@ -915,7 +921,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 95.25) (xy 118.11 95.25)
+			(xy 106.68 95.25) (xy 127 95.25)
 		)
 		(stroke
 			(width 0)
@@ -932,16 +938,6 @@
 			(type default)
 		)
 		(uuid "b8eee23c-29d5-4720-b312-f144d39f2419")
-	)
-	(wire
-		(pts
-			(xy 153.67 100.33) (xy 153.67 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bdd86dee-6a78-484a-9dcf-ece1bedc58ac")
 	)
 	(wire
 		(pts
@@ -962,6 +958,16 @@
 			(type default)
 		)
 		(uuid "d2a84f73-fd2d-4af3-9931-b80333af9313")
+	)
+	(wire
+		(pts
+			(xy 142.24 95.25) (xy 161.29 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d55cb239-77c7-4b3d-8478-2259a44c753c")
 	)
 	(wire
 		(pts
@@ -1602,53 +1608,51 @@
 		)
 	)
 	(symbol
-		(lib_id "LM3940IS-3.3_NOPB:LM3940IS-3.3_NOPB")
-		(at 135.89 97.79 0)
+		(lib_id "Regulator_Linear:AMS1117-3.3")
+		(at 134.62 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8cab2b71-f10c-4be7-9e79-b816943ebd33")
-		(property "Reference" "IC1"
-			(at 135.89 87.63 0)
+		(uuid "8be55705-3719-48f5-a310-173484d25b13")
+		(property "Reference" "U5"
+			(at 134.62 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "LM3940IS-3.3_NOPB"
-			(at 135.89 90.17 0)
+		(property "Value" "AMS1117-3.3"
+			(at 134.62 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "myFootprints:TO254P1524X483-4N"
-			(at 135.89 97.79 0)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+			(at 134.62 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 135.89 97.79 0)
+		(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
+			(at 137.16 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 135.89 97.79 0)
+		(property "Description" "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"
+			(at 134.62 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1657,18 +1661,18 @@
 			)
 		)
 		(pin "2"
-			(uuid "461d2057-d746-4a46-824d-0a5d7f12de9b")
+			(uuid "ee03ce39-25c8-4369-8986-59bf795f8653")
 		)
 		(pin "1"
-			(uuid "70f9344c-5dbe-4914-afea-91f92c0fe403")
+			(uuid "4dee0b24-1d37-4b79-8822-8d2c0bbb09b2")
 		)
 		(pin "3"
-			(uuid "35e9f8d4-3c94-4e43-9863-52602d4fb4f3")
+			(uuid "cd955b0c-f7e1-4074-9817-890bb149bdf1")
 		)
 		(instances
 			(project ""
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/480e1df8-14aa-40df-bf4b-17bab0b9775f"
-					(reference "IC1")
+					(reference "U5")
 					(unit 1)
 				)
 			)
