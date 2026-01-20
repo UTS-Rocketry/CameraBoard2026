@@ -40,9 +40,14 @@ Built around the **STM32F405RGT6**, chosen for performance, CAN support, and str
   - 3.3V rail for MCU and logic  
   - Full decoupling network following ST guidelines
 
----
 ## Current Project Status
-Stage: End of Schematic Design
+Schematic Finalized
+
+Need to finish routing for pcb
+
+<img width="664" height="556" alt="Screenshot 2026-01-20 170351" src="https://github.com/user-attachments/assets/5e021877-3a2f-4e84-8855-d8beba203887" />
+<img width="759" height="725" alt="Screenshot 2026-01-20 170345" src="https://github.com/user-attachments/assets/6f005873-f335-4775-aed7-2f3fbe638d0e" />
+
 
 ## Contributors
 Reed Basangan — Software Lead, UTS Rocketry
