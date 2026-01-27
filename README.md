@@ -43,9 +43,6 @@ Built around the **STM32F405RGT6**, chosen for performance, CAN support, and str
 ## Current Project Status
 Schematic Finalized
 
-Need to finish routing for pcb
-<img width="777" height="653" alt="Screenshot from 2026-01-27 12-23-50" src="https://github.com/user-attachments/assets/33f15858-5c52-4196-ade5-3a43e443f8d7" />
-
 ## Contributors
 Reed Basangan — Software Lead, UTS Rocketry
 UTS Rocketry Avionics Team
