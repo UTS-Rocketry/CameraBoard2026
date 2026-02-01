@@ -5,30 +5,28 @@
 	(uuid "be7d371c-3b8c-44ce-99db-4a4fec584127")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector_Generic:Conn_01x05"
+		(symbol "Connector_Generic:Conn_01x03"
 			(pin_names
 				(offset 1.016)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "J1"
-				(at 2.54 1.2701 0)
+			(property "Reference" "J"
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
-					(hide yes)
 				)
 			)
-			(property "Value" "Runcam Split 4 v2"
-				(at 8.128 -1.016 0)
+			(property "Value" "Conn_01x03"
+				(at 0 -5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -49,8 +47,8 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
-				(at -1.016 10.922 0)
+			(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -76,27 +74,16 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x05_1_1"
+			(symbol "Conn_01x03_1_1"
 				(rectangle
-					(start -1.27 6.35)
-					(end 7.62 -6.35)
+					(start -1.27 3.81)
+					(end 1.27 -3.81)
 					(stroke
 						(width 0.254)
 						(type default)
 					)
 					(fill
 						(type background)
-					)
-				)
-				(rectangle
-					(start -1.27 5.207)
-					(end 0 4.953)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
 					)
 				)
 				(rectangle
@@ -132,21 +119,10 @@
 						(type none)
 					)
 				)
-				(rectangle
-					(start -1.27 -4.953)
-					(end 0 -5.207)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(pin passive line
-					(at -5.08 5.08 0)
+					(at -5.08 2.54 0)
 					(length 3.81)
-					(name "RX"
+					(name "Pin_1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -162,9 +138,9 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 2.54 0)
+					(at -5.08 0 0)
 					(length 3.81)
-					(name "TX"
+					(name "Pin_2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -180,9 +156,9 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at -5.08 -2.54 0)
 					(length 3.81)
-					(name "VIDEO"
+					(name "Pin_3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -190,42 +166,6 @@
 						)
 					)
 					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -5.08 0)
-					(length 3.81)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1162,13 +1102,23 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 74.93) (xy 218.44 81.28)
+			(xy 224.79 74.93) (xy 224.79 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "448524e9-c760-477d-8dff-01f7d4f7a628")
+	)
+	(wire
+		(pts
+			(xy 214.63 85.09) (xy 214.63 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "448c4fbf-9356-4975-85d4-21c7e12bfe32")
 	)
 	(wire
 		(pts
@@ -1179,6 +1129,26 @@
 			(type default)
 		)
 		(uuid "4c85254f-d68f-4864-94f6-c8739a99d23d")
+	)
+	(wire
+		(pts
+			(xy 218.44 91.44) (xy 218.44 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4fb149ec-8b75-42d3-bbec-f4777df53cea")
+	)
+	(wire
+		(pts
+			(xy 224.79 83.82) (xy 224.79 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "676205a5-0c06-4cea-b0a9-099ade5913ce")
 	)
 	(wire
 		(pts
@@ -1232,6 +1202,16 @@
 	)
 	(wire
 		(pts
+			(xy 218.44 86.36) (xy 224.79 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98aff218-67fe-4478-8f18-3c95d838d356")
+	)
+	(wire
+		(pts
 			(xy 146.05 90.17) (xy 160.02 90.17)
 		)
 		(stroke
@@ -1272,6 +1252,16 @@
 	)
 	(wire
 		(pts
+			(xy 214.63 85.09) (xy 224.79 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b182847b-08db-45d8-8a9a-b666fa7f5495")
+	)
+	(wire
+		(pts
 			(xy 119.38 82.55) (xy 133.35 82.55)
 		)
 		(stroke
@@ -1282,7 +1272,7 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 88.9) (xy 218.44 88.9)
+			(xy 204.47 88.9) (xy 214.63 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1312,7 +1302,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 74.93) (xy 218.44 74.93)
+			(xy 199.39 74.93) (xy 224.79 74.93)
 		)
 		(stroke
 			(width 0)
@@ -1641,86 +1631,6 @@
 			(project "cameraBoardSchematic"
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/74e3c2e3-591c-4dbb-bedb-b7f7db2a7e7f"
 					(reference "#PWR039")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x05")
-		(at 223.52 86.36 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2168ab58-58f1-42fb-bda7-7be942070bb0")
-		(property "Reference" "J5"
-			(at 226.06 85.0899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Value" "Runcam Split 4 v2"
-			(at 231.648 87.376 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 223.52 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 223.52 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 222.504 75.438 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "5"
-			(uuid "73578255-d984-4fa2-ba23-455ad11fce20")
-		)
-		(pin "4"
-			(uuid "09932c78-56bb-4c8e-98f9-d2427d951502")
-		)
-		(pin "3"
-			(uuid "4218f6e3-61a3-4639-b2a1-20d3c0fbb705")
-		)
-		(pin "1"
-			(uuid "b6b82586-ddad-4129-bb48-c349b0ba3c75")
-		)
-		(pin "2"
-			(uuid "73ec6c85-418a-4487-9d93-5b25c1cabdab")
-		)
-		(instances
-			(project "cameraBoardSchematic"
-				(path "/65068a32-f105-4204-b50e-234054c5a6d0/74e3c2e3-591c-4dbb-bedb-b7f7db2a7e7f"
-					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -2321,6 +2231,79 @@
 			(project "cameraBoardSchematic"
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/74e3c2e3-591c-4dbb-bedb-b7f7db2a7e7f"
 					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 229.87 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a70c74d8-8fc9-45b7-b073-ea424c6e7773")
+		(property "Reference" "Cam3"
+			(at 232.41 82.5499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x03"
+			(at 232.41 85.0899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical"
+			(at 229.87 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 229.87 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 229.87 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "25c4bc24-3941-4e94-904a-134030c32d37")
+		)
+		(pin "2"
+			(uuid "1b431cca-9e14-4952-9f63-6d15c56fd356")
+		)
+		(pin "3"
+			(uuid "f2d3670f-cd8a-451f-9454-2287018db007")
+		)
+		(instances
+			(project "CameraBoard"
+				(path "/65068a32-f105-4204-b50e-234054c5a6d0/74e3c2e3-591c-4dbb-bedb-b7f7db2a7e7f"
+					(reference "Cam3")
 					(unit 1)
 				)
 			)
