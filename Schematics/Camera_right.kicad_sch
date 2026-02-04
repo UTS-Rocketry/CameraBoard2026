@@ -1070,6 +1070,10 @@
 		(color 0 0 0 0)
 		(uuid "e8a6cc2d-e197-427e-926f-ae5104d3de3e")
 	)
+	(no_connect
+		(at 110.49 85.09)
+		(uuid "9fccc25a-5e64-41bc-b26d-47c3772ea95a")
+	)
 	(wire
 		(pts
 			(xy 113.03 80.01) (xy 113.03 74.93)
@@ -1340,47 +1344,71 @@
 		)
 		(uuid "036dd506-75d4-4e17-8a4b-c6b495a5334b")
 	)
-	(label "CAM_R_5V"
-		(at 203.2 85.09 180)
+	(global_label "CAM_UART_TX"
+		(shape input)
+		(at 191.77 67.31 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify right)
 		)
-		(uuid "1e10a582-55b9-4273-b73a-447b5a8d11ea")
+		(uuid "9c49047e-1439-4cbd-b139-c2c46863de46")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 176.2058 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
 	)
-	(label "CAM_R_5V"
+	(global_label "CAM_R_PWN_EN"
+		(shape input)
+		(at 59.69 80.01 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a69da9cb-950a-49b9-b309-56c947262bcc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 42.1906 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(hierarchical_label "CAM_R_5V"
+		(shape input)
 		(at 160.02 74.93 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify left)
 		)
-		(uuid "a3816bf5-12ca-4300-ba88-06ecebecf253")
+		(uuid "a126beb2-b417-4474-b985-8cc215a50ed1")
 	)
-	(hierarchical_label "CAM_R_PWN_EN"
+	(hierarchical_label "CAM_R_5V"
 		(shape input)
-		(at 59.69 80.01 180)
+		(at 203.2 85.09 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "a9e9f743-b456-4e3b-a141-34587c22b628")
-	)
-	(hierarchical_label "CAM_UART_TX"
-		(shape input)
-		(at 191.77 67.31 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "f9dd178c-39b5-48c3-9c70-20b9eaef196e")
+		(uuid "d76f6e59-f517-45e0-a3fb-8e78924ad42a")
 	)
 	(symbol
 		(lib_id "Device:C")

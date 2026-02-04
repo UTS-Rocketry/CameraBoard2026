@@ -1,4 +1,4 @@
-26776514179940896
+26784982127437933
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -106365,19 +106365,54 @@ Varistor VF
 2
 2
 myFootprints
-MOLEX_26013114
+BEADC2012X105N
 
 
 0
 2
 2
 myFootprints
-MOLEX_26013115
+CAPC2012X70
+<b>CAPACITOR</b><p>
+
+0
+2
+2
+myFootprints
+CAPC2012X135N
 
 
 0
-4
-4
+2
+2
+myFootprints
+CAPC2012X140N
+
+
+0
+2
+2
+myFootprints
+CAPC2012X145N
+
+
+0
+2
+2
+myFootprints
+RESC2012X60N
+
+
+0
+2
+2
+myFootprints
+RESC2012X65N
+
+
+0
+2
+2
 myFootprints
 SAMZO G4R0015010
 
@@ -106385,3 +106420,38 @@ SAMZO G4R0015010
 0
 4
 4
+myFootprints
+SOIC127P599X175-8N
+
+
+0
+8
+8
+myFootprints
+SOIC127P600X170-9N
+
+
+0
+9
+9
+myFootprints
+SOT95P280X145-6N
+<b>SOT-23 6L</b><br>
+
+0
+6
+6
+myFootprints
+TO254P1524X483-4N
+
+
+0
+4
+4
+myFootprints
+TVS_ESD321DPYR
+
+
+0
+2
+2

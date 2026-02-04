@@ -1070,6 +1070,10 @@
 		(color 0 0 0 0)
 		(uuid "f64d2192-8417-4139-9382-4b89d719d4b0")
 	)
+	(no_connect
+		(at 110.49 92.71)
+		(uuid "2b0562e7-bb27-404a-8fab-0c5b3ba6e700")
+	)
 	(wire
 		(pts
 			(xy 80.01 74.93) (xy 80.01 82.55)
@@ -1390,47 +1394,71 @@
 		)
 		(uuid "128d457b-d037-422c-95b9-069ad9c18789")
 	)
-	(label "CAM_C_5V"
+	(global_label "CAM_C_PWN_EN"
+		(shape input)
+		(at 59.69 87.63 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bfc8d942-9c6f-4c6d-ae20-8f2f64f2757d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 42.1906 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CAM_UART_TX"
+		(shape input)
+		(at 191.77 74.93 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e4a5ecc3-09d2-4704-9a76-33720eae96f2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 176.2058 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(hierarchical_label "CAM_C_5V"
+		(shape input)
 		(at 203.2 92.71 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify right)
 		)
-		(uuid "52d7a6be-263a-42d2-8dbb-f51af91e0910")
+		(uuid "3a5be63e-add8-410d-9021-6b080d758e6d")
 	)
-	(label "CAM_C_5V"
+	(hierarchical_label "CAM_C_5V"
+		(shape input)
 		(at 160.02 82.55 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify left)
 		)
-		(uuid "c9704937-338f-4247-93e3-7549f5c4fff1")
-	)
-	(hierarchical_label "CAM_C_PWN_EN"
-		(shape input)
-		(at 59.69 87.63 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "6e32064e-d72c-4649-b5c3-a483a5aa085b")
-	)
-	(hierarchical_label "CAM_UART_TX"
-		(shape input)
-		(at 191.77 74.93 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b132b892-cd06-4cee-ba2c-a3006efa3f15")
+		(uuid "82f7a1a1-6063-4359-a2cd-05754c89b75e")
 	)
 	(symbol
 		(lib_id "Device:C")
