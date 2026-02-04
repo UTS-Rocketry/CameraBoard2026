@@ -1070,6 +1070,10 @@
 		(color 0 0 0 0)
 		(uuid "f5ed3ccc-e9b3-4394-9c30-20e227deb273")
 	)
+	(no_connect
+		(at 114.3 100.33)
+		(uuid "73ee73bb-a7a3-4b93-ab7e-a4772e644bc1")
+	)
 	(wire
 		(pts
 			(xy 114.3 95.25) (xy 116.84 95.25)
@@ -1370,16 +1374,6 @@
 		)
 		(uuid "fd40701a-4a44-4f53-9604-07e3ed129148")
 	)
-	(label "CAM_L_5V"
-		(at 163.83 90.17 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0f795ab4-c05a-41dc-848f-2e9e2a26b848")
-	)
 	(label ""
 		(at 127 90.17 0)
 		(effects
@@ -1390,37 +1384,71 @@
 		)
 		(uuid "7758616a-30a8-469a-a6bf-48245d2dbea9")
 	)
-	(label "CAM_L_5V"
+	(global_label "CAM_L_PWN_EN"
+		(shape input)
+		(at 60.96 96.52 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "046d3951-3007-45aa-b6da-b3bf88be8c04")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 43.7025 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CAM_UART_TX"
+		(shape input)
+		(at 194.31 82.55 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6ba208ee-e52a-4e4f-acbb-3504688ad41c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 178.7458 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(hierarchical_label "CAM_L_5V"
+		(shape input)
 		(at 207.01 100.33 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify right)
 		)
-		(uuid "b14fe771-60d0-43a8-ab59-0184cb5b7a06")
+		(uuid "31e5ef33-b678-483f-83ad-847d757ad508")
 	)
-	(hierarchical_label "CAM_L_PWN_EN"
+	(hierarchical_label "CAM_L_5V"
 		(shape input)
-		(at 60.96 96.52 180)
+		(at 163.83 90.17 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "0133601e-e29a-41c6-941d-4891209a3950")
-	)
-	(hierarchical_label "CAM_UART_TX"
-		(shape input)
-		(at 194.31 82.55 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "981e8084-ba27-4bc2-af48-873c76f1d426")
+		(uuid "b2a2a913-fa7c-429b-bf4d-379fb5437bee")
 	)
 	(symbol
 		(lib_id "Device:C")
