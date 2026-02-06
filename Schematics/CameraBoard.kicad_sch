@@ -5,6 +5,262 @@
 	(uuid "65068a32-f105-4204-b50e-234054c5a6d0")
 	(paper "A4")
 	(lib_symbols)
+	(junction
+		(at 77.47 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "87749baa-9e77-49e7-8648-617353b2e1f5")
+	)
+	(wire
+		(pts
+			(xy 167.64 69.85) (xy 167.64 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02e2785b-2f73-41b4-ab36-5d9a5fec5a22")
+	)
+	(wire
+		(pts
+			(xy 40.64 146.05) (xy 40.64 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "064d53af-e348-4a09-97fc-193140b4feb3")
+	)
+	(wire
+		(pts
+			(xy 40.64 71.12) (xy 82.55 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09208ee7-860f-4d91-8580-2c2428767556")
+	)
+	(wire
+		(pts
+			(xy 170.18 66.04) (xy 170.18 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bab21bd-500e-4847-ab57-a5b5c4f8bf10")
+	)
+	(wire
+		(pts
+			(xy 170.18 71.12) (xy 96.52 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "247d4e8d-b16c-4941-ad48-dc6b86237567")
+	)
+	(wire
+		(pts
+			(xy 93.98 66.04) (xy 93.98 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2df17d4f-223f-4893-889c-d244a7cca894")
+	)
+	(wire
+		(pts
+			(xy 80.01 73.66) (xy 80.01 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3be9f69c-9ce0-4c22-89ec-c4504d341bfb")
+	)
+	(wire
+		(pts
+			(xy 77.47 129.54) (xy 48.26 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c779b2c-d486-4090-811d-4e2470fe9539")
+	)
+	(wire
+		(pts
+			(xy 96.52 71.12) (xy 96.52 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c7f884b-1756-48bb-9a2c-1bae5c94ef89")
+	)
+	(wire
+		(pts
+			(xy 77.47 66.04) (xy 77.47 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f91e743-293c-46a3-88ce-fe22744a5a9b")
+	)
+	(wire
+		(pts
+			(xy 76.2 74.93) (xy 85.09 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "732c2adc-06bd-4d4d-8cea-48072fc0444a")
+	)
+	(wire
+		(pts
+			(xy 120.65 129.54) (xy 120.65 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77b54b39-adb1-442f-8551-b2f2507e07f6")
+	)
+	(wire
+		(pts
+			(xy 93.98 69.85) (xy 167.64 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8943787c-9853-4768-b99c-87ebde16a60d")
+	)
+	(wire
+		(pts
+			(xy 80.01 143.51) (xy 80.01 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d311752-52af-4c4c-9563-c97ad8958c48")
+	)
+	(wire
+		(pts
+			(xy 115.57 146.05) (xy 115.57 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "948821af-c3a1-451c-b777-bfcc647f931e")
+	)
+	(wire
+		(pts
+			(xy 115.57 73.66) (xy 80.01 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc17f3b9-d826-470d-98cd-8c9d3507a8f6")
+	)
+	(wire
+		(pts
+			(xy 77.47 143.51) (xy 80.01 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0c03e1e-f3ca-484d-b0dc-884b6268cbf1")
+	)
+	(wire
+		(pts
+			(xy 85.09 74.93) (xy 85.09 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6c2ea69-c10f-43fc-9316-5a9bfcb78009")
+	)
+	(wire
+		(pts
+			(xy 77.47 129.54) (xy 120.65 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dac99c28-71c2-4f2d-a3f1-0ef32ddc5269")
+	)
+	(wire
+		(pts
+			(xy 48.26 129.54) (xy 48.26 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfe52292-3c16-4b4c-8aec-51657c1130bc")
+	)
+	(wire
+		(pts
+			(xy 101.6 55.88) (xy 106.68 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e950b0cc-88c3-48e4-b70b-47b3ecb35372")
+	)
+	(wire
+		(pts
+			(xy 101.6 53.34) (xy 106.68 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec8514cc-b418-4b94-a0ac-57d0ed218c14")
+	)
+	(wire
+		(pts
+			(xy 82.55 71.12) (xy 82.55 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f03de99f-dd31-4382-9649-713e6de4534e")
+	)
+	(wire
+		(pts
+			(xy 76.2 146.05) (xy 76.2 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f295e94c-3c28-4612-b4b9-b26f15a3c765")
+	)
+	(wire
+		(pts
+			(xy 77.47 129.54) (xy 77.47 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2d61ede-f88f-4f01-9624-491b238e46d4")
+	)
 	(sheet
 		(at 20.32 17.78)
 		(size 39.37 48.26)
@@ -37,6 +293,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "VBAT" input
+			(at 46.99 66.04 270)
+			(uuid "320a4c9f-ea1f-497a-be3f-f0f86bd28bbd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -81,6 +347,116 @@
 				(justify left top)
 			)
 		)
+		(pin "CAM_C_PWN_EN" input
+			(at 80.01 66.04 270)
+			(uuid "5c7a65ba-5ece-408f-8860-944a263100b1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CAM_L_PWN_EN" input
+			(at 82.55 66.04 270)
+			(uuid "3e080fed-7864-4cdb-96e0-ba8670fff362")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CAM_R_PWN_EN" input
+			(at 85.09 66.04 270)
+			(uuid "c27e4bb1-ed71-492d-accb-6f723182da29")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CAM_UART_TX" input
+			(at 77.47 66.04 270)
+			(uuid "6451d271-5b78-4eee-8a92-25a2d6254d06")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CAN_RX_2" input
+			(at 101.6 53.34 0)
+			(uuid "5181ce95-2e81-4913-8548-781c1a1f2b17")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CAN_TX_2" input
+			(at 101.6 55.88 0)
+			(uuid "3c18401e-6fb0-4362-b805-e885e5d2fc7c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "D+" input
+			(at 93.98 66.04 270)
+			(uuid "3093d6fc-5318-4fb9-8666-4b16147d1ced")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D-" input
+			(at 96.52 66.04 270)
+			(uuid "1c8a15e4-5641-4a13-9ef6-d27d429bc52e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "UART_DEBUG_RX" input
+			(at 64.77 43.18 180)
+			(uuid "98a4e750-f103-4a0f-bbf2-e32a8af28473")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "UART_DEBUG_TX" input
+			(at 64.77 39.37 180)
+			(uuid "b2db13cd-5dd3-4bc1-b230-67dac720a9cc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VBUS" input
+			(at 64.77 34.29 180)
+			(uuid "b0fe58de-9fae-4756-85e7-5113c38b76d9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "CameraBoard"
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0"
@@ -121,6 +497,26 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "CAN_RX_2" input
+			(at 106.68 53.34 180)
+			(uuid "bb81f01a-5b6b-4fd5-89a2-7e6e5497aceb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CAN_TX_2" input
+			(at 106.68 55.88 180)
+			(uuid "00279116-613c-4cd9-9fd7-21bc6e591b82")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -165,6 +561,26 @@
 				(justify left top)
 			)
 		)
+		(pin "CAM_C_PWN_EN" input
+			(at 115.57 146.05 90)
+			(uuid "469b6e8a-6a2f-4dc6-a909-556ded299129")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CAM_UART_TX" input
+			(at 120.65 146.05 90)
+			(uuid "09aafe1d-ccf6-4a5d-a539-d3b56ab8f46c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "CameraBoard"
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0"
@@ -205,6 +621,26 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "D+" input
+			(at 167.64 66.04 270)
+			(uuid "cd0264da-08ba-4b5c-9fc8-929abc5e1d20")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D-" input
+			(at 170.18 66.04 270)
+			(uuid "fcae424f-2c64-40cc-bb05-b769e08c53bc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -249,6 +685,26 @@
 				(justify left top)
 			)
 		)
+		(pin "CAM_R_PWN_EN" input
+			(at 76.2 146.05 90)
+			(uuid "bfc4afa6-d3bd-4973-a176-d8fa8dd84465")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CAM_UART_TX" input
+			(at 80.01 146.05 90)
+			(uuid "710301dc-7a6f-4d2f-9487-42926a323574")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "CameraBoard"
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0"
@@ -289,6 +745,26 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "CAM_L_PWN_EN" input
+			(at 40.64 146.05 90)
+			(uuid "b254656e-c9f9-4b7e-9bc1-40cf8a132fa3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CAM_UART_TX" input
+			(at 48.26 146.05 90)
+			(uuid "8ec1f38f-c35d-46bf-bda8-75a8749c75fb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances

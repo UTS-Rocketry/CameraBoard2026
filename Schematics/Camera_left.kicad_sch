@@ -1035,12 +1035,6 @@
 		(uuid "627235c7-5b81-401d-95cc-601baf15d2de")
 	)
 	(junction
-		(at 203.2 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "86376408-826e-4598-831f-d7f7237decaa")
-	)
-	(junction
 		(at 203.2 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1122,7 +1116,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 88.9) (xy 226.06 88.9)
+			(xy 194.31 88.9) (xy 226.06 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1309,16 +1303,6 @@
 			(type default)
 		)
 		(uuid "c8503a11-c554-460d-8890-f96122d2a4b0")
-	)
-	(wire
-		(pts
-			(xy 194.31 88.9) (xy 203.2 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d7fb4815-1e52-4c01-8cc9-6b894a2df149")
 	)
 	(wire
 		(pts
@@ -2274,76 +2258,6 @@
 			(project "cameraBoardSchematic"
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/e8bd3566-d4f2-43cd-9088-441e27788299"
 					(reference "#PWR023")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 203.2 92.71 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ce843ada-aaeb-492a-9a9f-f05a5cb0b41f")
-		(property "Reference" "R1"
-			(at 205.74 91.4399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1k"
-			(at 205.74 93.9799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 201.422 92.71 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 203.2 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 203.2 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "10e143fd-0864-4b22-938e-366305b579da")
-		)
-		(pin "1"
-			(uuid "af8657a3-c90a-45b4-ba1d-ab80e9dfc7ec")
-		)
-		(instances
-			(project ""
-				(path "/65068a32-f105-4204-b50e-234054c5a6d0/e8bd3566-d4f2-43cd-9088-441e27788299"
-					(reference "R1")
 					(unit 1)
 				)
 			)

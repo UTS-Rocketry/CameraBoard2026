@@ -1041,12 +1041,6 @@
 		(uuid "6f6574b2-ca7e-4435-8d8f-0c9db7fbc322")
 	)
 	(junction
-		(at 199.39 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7f647f5a-7f18-47a6-b836-e960032a0605")
-	)
-	(junction
 		(at 64.77 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1069,12 +1063,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d86bc5ef-6db5-46b7-a115-b9f7e72274c2")
-	)
-	(junction
-		(at 199.39 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f64d2192-8417-4139-9382-4b89d719d4b0")
 	)
 	(no_connect
 		(at 110.49 92.71)
@@ -1152,7 +1140,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 88.9) (xy 224.79 88.9)
+			(xy 185.42 88.9) (xy 224.79 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1262,16 +1250,6 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 88.9) (xy 199.39 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b4edc8c8-f543-4a28-b3e8-7c1ee10715ba")
-	)
-	(wire
-		(pts
 			(xy 110.49 82.55) (xy 113.03 82.55)
 		)
 		(stroke
@@ -1292,23 +1270,13 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 81.28) (xy 224.79 81.28)
+			(xy 191.77 81.28) (xy 224.79 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "c83f45a2-a6ba-41df-91a5-54f9fa7cfeeb")
-	)
-	(wire
-		(pts
-			(xy 191.77 81.28) (xy 199.39 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cf5baa35-cf61-40ad-b29c-094d65ff42f7")
 	)
 	(wire
 		(pts
@@ -2084,76 +2052,6 @@
 			(project "cameraBoardSchematic"
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/74e3c2e3-591c-4dbb-bedb-b7f7db2a7e7f"
 					(reference "#PWR035")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 199.39 85.09 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7c97bf24-8b27-43d4-b269-16b234bc176d")
-		(property "Reference" "R10"
-			(at 201.93 83.8199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1k"
-			(at 201.93 86.3599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 197.612 85.09 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 199.39 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 199.39 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "c43af36e-ae39-4204-857c-1cd4f7fc1ef7")
-		)
-		(pin "1"
-			(uuid "c3d27888-b1be-4941-9109-4039ca6d959f")
-		)
-		(instances
-			(project "cameraBoardSchematic"
-				(path "/65068a32-f105-4204-b50e-234054c5a6d0/74e3c2e3-591c-4dbb-bedb-b7f7db2a7e7f"
-					(reference "R10")
 					(unit 1)
 				)
 			)

@@ -1402,6 +1402,17 @@
 		)
 		(uuid "f37a097e-e938-4022-b15e-2650fb0ae30e")
 	)
+	(hierarchical_label "CAN_TX_2"
+		(shape input)
+		(at 102.87 105.41 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0fab8f25-0e15-4553-bbe5-bcf5a5b7f14a")
+	)
 	(hierarchical_label "CAN_RX_2"
 		(shape input)
 		(at 102.87 107.95 180)
@@ -1412,6 +1423,17 @@
 			(justify right)
 		)
 		(uuid "8cc0a20c-07ec-41c9-b264-148ea283d7d1")
+	)
+	(hierarchical_label "CAN_RX_2"
+		(shape input)
+		(at 102.87 107.95 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "edf2fff3-35f8-4b35-81be-99e5e8cea319")
 	)
 	(hierarchical_label "CAN_TX_2"
 		(shape input)
