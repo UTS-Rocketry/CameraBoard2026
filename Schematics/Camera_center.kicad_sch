@@ -1041,6 +1041,12 @@
 		(uuid "6f6574b2-ca7e-4435-8d8f-0c9db7fbc322")
 	)
 	(junction
+		(at 199.39 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7f647f5a-7f18-47a6-b836-e960032a0605")
+	)
+	(junction
 		(at 64.77 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1065,7 +1071,7 @@
 		(uuid "d86bc5ef-6db5-46b7-a115-b9f7e72274c2")
 	)
 	(junction
-		(at 199.39 74.93)
+		(at 199.39 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f64d2192-8417-4139-9382-4b89d719d4b0")
@@ -1096,7 +1102,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 92.71) (xy 205.74 91.44)
+			(xy 186.69 92.71) (xy 186.69 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1106,23 +1112,13 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 74.93) (xy 224.79 81.28)
+			(xy 224.79 81.28) (xy 224.79 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "448524e9-c760-477d-8dff-01f7d4f7a628")
-	)
-	(wire
-		(pts
-			(xy 214.63 85.09) (xy 214.63 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "448c4fbf-9356-4975-85d4-21c7e12bfe32")
 	)
 	(wire
 		(pts
@@ -1136,7 +1132,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 91.44) (xy 218.44 86.36)
+			(xy 218.44 91.44) (xy 218.44 90.17)
 		)
 		(stroke
 			(width 0)
@@ -1146,13 +1142,23 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 83.82) (xy 224.79 85.09)
+			(xy 224.79 87.63) (xy 224.79 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "676205a5-0c06-4cea-b0a9-099ade5913ce")
+	)
+	(wire
+		(pts
+			(xy 199.39 88.9) (xy 224.79 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8046b1c2-6ce0-436b-a16c-056bf59e9dfa")
 	)
 	(wire
 		(pts
@@ -1176,23 +1182,13 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 92.71) (xy 205.74 92.71)
+			(xy 184.15 92.71) (xy 186.69 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "9101df38-d91a-46a6-a928-6b6fff4ab5ed")
-	)
-	(wire
-		(pts
-			(xy 191.77 82.55) (xy 199.39 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "94a349bd-1d9e-4283-8b4b-118b859e188e")
 	)
 	(wire
 		(pts
@@ -1206,7 +1202,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 86.36) (xy 224.79 86.36)
+			(xy 218.44 90.17) (xy 224.79 90.17)
 		)
 		(stroke
 			(width 0)
@@ -1246,23 +1242,13 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 91.44) (xy 218.44 91.44)
+			(xy 186.69 91.44) (xy 218.44 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "b14b687f-4303-466a-b6b0-59fd77e5b7c8")
-	)
-	(wire
-		(pts
-			(xy 214.63 85.09) (xy 224.79 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b182847b-08db-45d8-8a9a-b666fa7f5495")
 	)
 	(wire
 		(pts
@@ -1276,7 +1262,7 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 88.9) (xy 214.63 88.9)
+			(xy 185.42 88.9) (xy 199.39 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1306,7 +1292,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 74.93) (xy 224.79 74.93)
+			(xy 199.39 81.28) (xy 224.79 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1316,7 +1302,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 74.93) (xy 199.39 74.93)
+			(xy 191.77 81.28) (xy 199.39 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1394,71 +1380,47 @@
 		)
 		(uuid "128d457b-d037-422c-95b9-069ad9c18789")
 	)
-	(global_label "CAM_C_PWN_EN"
-		(shape input)
-		(at 59.69 87.63 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "bfc8d942-9c6f-4c6d-ae20-8f2f64f2757d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 42.1906 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "CAM_UART_TX"
-		(shape input)
-		(at 191.77 74.93 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e4a5ecc3-09d2-4704-9a76-33720eae96f2")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 176.2058 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(hierarchical_label "CAM_C_5V"
-		(shape input)
-		(at 203.2 92.71 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "3a5be63e-add8-410d-9021-6b080d758e6d")
-	)
-	(hierarchical_label "CAM_C_5V"
-		(shape input)
+	(label "CAM_C_5V"
 		(at 160.02 82.55 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify left bottom)
 		)
-		(uuid "82f7a1a1-6063-4359-a2cd-05754c89b75e")
+		(uuid "8434e4e3-4bef-4758-b1f8-d87dd16d82c7")
+	)
+	(label "CAM_C_5V"
+		(at 184.15 92.71 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "acd7acd7-f55b-48f4-a91e-ccf8e6b3ed53")
+	)
+	(hierarchical_label "CAM_UART_TX"
+		(shape input)
+		(at 191.77 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0dfcc412-3d95-4447-a78f-853595fd6bb6")
+	)
+	(hierarchical_label "CAM_C_PWN_EN"
+		(shape input)
+		(at 59.69 87.63 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ec6ff724-7e7a-45e6-bbee-1d4369fd9fe9")
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -1532,7 +1494,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 204.47 88.9 270)
+		(at 185.42 88.9 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1541,7 +1503,7 @@
 		(fields_autoplaced yes)
 		(uuid "0ebc8c97-b459-4ded-bc3b-956d160c701e")
 		(property "Reference" "#PWR040"
-			(at 198.12 88.9 0)
+			(at 179.07 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1550,7 +1512,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 200.66 88.8999 90)
+			(at 181.61 88.8999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1559,7 +1521,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 204.47 88.9 0)
+			(at 185.42 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1568,7 +1530,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 204.47 88.9 0)
+			(at 185.42 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1577,7 +1539,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 204.47 88.9 0)
+			(at 185.42 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1592,73 +1554,6 @@
 			(project "cameraBoardSchematic"
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/74e3c2e3-591c-4dbb-bedb-b7f7db2a7e7f"
 					(reference "#PWR040")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 191.77 82.55 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0ffde25c-20c3-432b-97ab-104640c3702a")
-		(property "Reference" "#PWR039"
-			(at 185.42 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 187.96 82.5499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 191.77 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 191.77 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 191.77 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9fa80f63-0ceb-4dcd-b9d5-435192da5051")
-		)
-		(instances
-			(project "cameraBoardSchematic"
-				(path "/65068a32-f105-4204-b50e-234054c5a6d0/74e3c2e3-591c-4dbb-bedb-b7f7db2a7e7f"
-					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -2196,7 +2091,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 199.39 78.74 0)
+		(at 199.39 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2205,7 +2100,7 @@
 		(fields_autoplaced yes)
 		(uuid "7c97bf24-8b27-43d4-b269-16b234bc176d")
 		(property "Reference" "R10"
-			(at 201.93 77.4699 0)
+			(at 201.93 83.8199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2214,7 +2109,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 201.93 80.0099 0)
+			(at 201.93 86.3599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2223,7 +2118,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 197.612 78.74 90)
+			(at 197.612 85.09 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2232,7 +2127,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 199.39 78.74 0)
+			(at 199.39 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2241,7 +2136,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 199.39 78.74 0)
+			(at 199.39 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2266,7 +2161,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
-		(at 229.87 83.82 0)
+		(at 229.87 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2275,7 +2170,7 @@
 		(fields_autoplaced yes)
 		(uuid "a70c74d8-8fc9-45b7-b073-ea424c6e7773")
 		(property "Reference" "Cam3"
-			(at 232.41 82.5499 0)
+			(at 232.41 86.3599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2284,7 +2179,7 @@
 			)
 		)
 		(property "Value" "Conn_01x03"
-			(at 232.41 85.0899 0)
+			(at 232.41 88.8999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2293,7 +2188,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical"
-			(at 229.87 83.82 0)
+			(at 229.87 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2302,7 +2197,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 229.87 83.82 0)
+			(at 229.87 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2311,7 +2206,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 229.87 83.82 0)
+			(at 229.87 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
