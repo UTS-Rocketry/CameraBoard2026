@@ -1972,49 +1972,27 @@
 		)
 		(uuid "ff19c130-a888-4214-85f8-7e566447d5dd")
 	)
-	(global_label "D-"
+	(hierarchical_label "D-"
 		(shape input)
 		(at 153.67 81.28 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "70485a67-d97d-43b5-b362-1fa9271b010f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 159.4976 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
+		(uuid "23176c1c-3176-41e8-9c66-da74ae2863b5")
 	)
-	(global_label "D+"
+	(hierarchical_label "D+"
 		(shape input)
 		(at 153.67 90.17 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "80c64f28-f0fe-442a-8dcb-1f87ed9d3bed")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 159.4976 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
+		(uuid "b69e0ede-643f-4ddc-8da8-0fc7a0157b7a")
 	)
 	(symbol
 		(lib_id "Connector:USB_C_Receptacle")
