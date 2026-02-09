@@ -6,6 +6,12 @@
 	(paper "A4")
 	(lib_symbols)
 	(junction
+		(at 91.44 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4e1f462c-f8de-42a4-8952-7fc8e568fef2")
+	)
+	(junction
 		(at 77.47 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -23,26 +29,6 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 146.05) (xy 40.64 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "064d53af-e348-4a09-97fc-193140b4feb3")
-	)
-	(wire
-		(pts
-			(xy 40.64 71.12) (xy 82.55 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "09208ee7-860f-4d91-8580-2c2428767556")
-	)
-	(wire
-		(pts
 			(xy 170.18 66.04) (xy 170.18 71.12)
 		)
 		(stroke
@@ -50,6 +36,16 @@
 			(type default)
 		)
 		(uuid "0bab21bd-500e-4847-ab57-a5b5c4f8bf10")
+	)
+	(wire
+		(pts
+			(xy 77.47 129.54) (xy 91.44 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f1d57be-c73b-4d91-8aca-59ddda261277")
 	)
 	(wire
 		(pts
@@ -73,13 +69,13 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 73.66) (xy 80.01 66.04)
+			(xy 85.09 66.04) (xy 85.09 146.05)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3be9f69c-9ce0-4c22-89ec-c4504d341bfb")
+		(uuid "377ff555-cd17-4322-a658-5cf6b462f146")
 	)
 	(wire
 		(pts
@@ -90,6 +86,16 @@
 			(type default)
 		)
 		(uuid "3c779b2c-d486-4090-811d-4e2470fe9539")
+	)
+	(wire
+		(pts
+			(xy 125.73 147.32) (xy 125.73 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46975112-285e-45c1-b650-366134223bac")
 	)
 	(wire
 		(pts
@@ -113,23 +119,13 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 74.93) (xy 85.09 74.93)
+			(xy 91.44 129.54) (xy 130.81 129.54)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "732c2adc-06bd-4d4d-8cea-48072fc0444a")
-	)
-	(wire
-		(pts
-			(xy 120.65 129.54) (xy 120.65 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "77b54b39-adb1-442f-8551-b2f2507e07f6")
+		(uuid "7533d4a5-95d7-43cb-bbf5-f3cdcaf87fb8")
 	)
 	(wire
 		(pts
@@ -143,63 +139,53 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 143.51) (xy 80.01 146.05)
+			(xy 40.64 72.39) (xy 82.55 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8d311752-52af-4c4c-9563-c97ad8958c48")
+		(uuid "a6b094ee-ee98-4734-9c56-b429a6338d62")
 	)
 	(wire
 		(pts
-			(xy 115.57 146.05) (xy 115.57 73.66)
+			(xy 82.55 72.39) (xy 82.55 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "948821af-c3a1-451c-b777-bfcc647f931e")
+		(uuid "ae7c7351-f55f-40f5-9da4-76cc3262bd58")
 	)
 	(wire
 		(pts
-			(xy 115.57 73.66) (xy 80.01 73.66)
+			(xy 40.64 146.05) (xy 40.64 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bc17f3b9-d826-470d-98cd-8c9d3507a8f6")
+		(uuid "cc8924ed-12db-4eb5-91d6-be17da819af4")
 	)
 	(wire
 		(pts
-			(xy 77.47 143.51) (xy 80.01 143.51)
+			(xy 125.73 74.93) (xy 80.01 74.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c0c03e1e-f3ca-484d-b0dc-884b6268cbf1")
+		(uuid "ced2b71c-e532-4ecf-985d-f4f6203e7636")
 	)
 	(wire
 		(pts
-			(xy 85.09 74.93) (xy 85.09 66.04)
+			(xy 80.01 74.93) (xy 80.01 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d6c2ea69-c10f-43fc-9316-5a9bfcb78009")
-	)
-	(wire
-		(pts
-			(xy 77.47 129.54) (xy 120.65 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dac99c28-71c2-4f2d-a3f1-0ef32ddc5269")
+		(uuid "ddd253a0-ff4f-4283-9b7d-6e3358e9445e")
 	)
 	(wire
 		(pts
@@ -210,6 +196,16 @@
 			(type default)
 		)
 		(uuid "dfe52292-3c16-4b4c-8aec-51657c1130bc")
+	)
+	(wire
+		(pts
+			(xy 91.44 146.05) (xy 91.44 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2db864b-e168-48a6-8f91-dc4e4f595d5c")
 	)
 	(wire
 		(pts
@@ -233,33 +229,75 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 71.12) (xy 82.55 66.04)
+			(xy 130.81 129.54) (xy 130.81 147.32)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f03de99f-dd31-4382-9649-713e6de4534e")
+		(uuid "fccaddda-4f67-4dd9-93c8-bd01caa9d361")
 	)
-	(wire
-		(pts
-			(xy 76.2 146.05) (xy 76.2 74.93)
-		)
+	(sheet
+		(at 111.76 147.32)
+		(size 41.91 39.37)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
 		(stroke
-			(width 0)
-			(type default)
+			(width 0.1524)
+			(type solid)
 		)
-		(uuid "f295e94c-3c28-4612-b4b9-b26f15a3c765")
-	)
-	(wire
-		(pts
-			(xy 77.47 129.54) (xy 77.47 143.51)
+		(fill
+			(color 0 0 0 0.0000)
 		)
-		(stroke
-			(width 0)
-			(type default)
+		(uuid "0f44c39c-84ca-4885-9561-99bc30f48163")
+		(property "Sheetname" "Camera_center"
+			(at 111.76 146.6084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
 		)
-		(uuid "f2d61ede-f88f-4f01-9624-491b238e46d4")
+		(property "Sheetfile" "Camera.kicad_sch"
+			(at 111.76 187.2746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "CAM_C_PWN_EN" input
+			(at 125.73 147.32 90)
+			(uuid "3d499fef-a1c6-4fee-a5e3-2953050bfa45")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CAM_UART_TX" input
+			(at 130.81 147.32 90)
+			(uuid "8575c217-63ee-4f4e-bfd5-df22148f9b27")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "CameraBoard"
+				(path "/65068a32-f105-4204-b50e-234054c5a6d0"
+					(page "10")
+				)
+			)
+		)
 	)
 	(sheet
 		(at 20.32 17.78)
@@ -528,8 +566,8 @@
 		)
 	)
 	(sheet
-		(at 107.95 146.05)
-		(size 35.56 41.91)
+		(at 63.5 146.05)
+		(size 41.91 39.37)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -542,9 +580,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "74e3c2e3-591c-4dbb-bedb-b7f7db2a7e7f")
-		(property "Sheetname" "Camera_center"
-			(at 107.95 145.3384 0)
+		(uuid "87d56ee5-98da-4fef-82d7-f6ca9a8fff80")
+		(property "Sheetname" "Camera_right"
+			(at 63.5 145.3384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -552,8 +590,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Camera_center.kicad_sch"
-			(at 107.95 188.5446 0)
+		(property "Sheetfile" "Camera.kicad_sch"
+			(at 63.5 186.0046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -561,9 +599,9 @@
 				(justify left top)
 			)
 		)
-		(pin "CAM_C_PWN_EN" input
-			(at 115.57 146.05 90)
-			(uuid "469b6e8a-6a2f-4dc6-a909-556ded299129")
+		(pin "CAM_R_PWN_EN" input
+			(at 85.09 146.05 90)
+			(uuid "1ed1f431-a421-4dcb-b564-8a23f91676bb")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -572,8 +610,8 @@
 			)
 		)
 		(pin "CAM_UART_TX" input
-			(at 120.65 146.05 90)
-			(uuid "09aafe1d-ccf6-4a5d-a539-d3b56ab8f46c")
+			(at 91.44 146.05 90)
+			(uuid "5dbc00f3-d17e-4f62-9e37-bc590c60c5c2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -584,7 +622,7 @@
 		(instances
 			(project "CameraBoard"
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0"
-					(page "6")
+					(page "9")
 				)
 			)
 		)
@@ -652,68 +690,6 @@
 		)
 	)
 	(sheet
-		(at 63.5 146.05)
-		(size 39.37 41.91)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "bf3de135-4611-4c7d-8878-73765f0881dd")
-		(property "Sheetname" "Camera_right"
-			(at 63.5 145.3384 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Camera_right.kicad_sch"
-			(at 63.5 188.5446 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "CAM_R_PWN_EN" input
-			(at 76.2 146.05 90)
-			(uuid "bfc4afa6-d3bd-4973-a176-d8fa8dd84465")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "CAM_UART_TX" input
-			(at 80.01 146.05 90)
-			(uuid "710301dc-7a6f-4d2f-9487-42926a323574")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "CameraBoard"
-				(path "/65068a32-f105-4204-b50e-234054c5a6d0"
-					(page "5")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 19.05 146.05)
 		(size 39.37 41.91)
 		(exclude_from_sim no)
@@ -738,7 +714,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Camera_left.kicad_sch"
+		(property "Sheetfile" "Camera.kicad_sch"
 			(at 19.05 188.5446 0)
 			(effects
 				(font
