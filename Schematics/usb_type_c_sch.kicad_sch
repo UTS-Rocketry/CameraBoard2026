@@ -1601,6 +1601,12 @@
 		(uuid "45e561c6-9b9b-4611-aa0a-c5e176558fe8")
 	)
 	(junction
+		(at 147.32 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5c1e657f-ddc3-4c56-abcc-390f371d4b7b")
+	)
+	(junction
 		(at 147.32 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1834,13 +1840,23 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 67.31) (xy 158.75 67.31)
+			(xy 140.97 67.31) (xy 147.32 67.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "8121b184-0c84-461c-b35f-bdb7f1bc1dac")
+	)
+	(wire
+		(pts
+			(xy 147.32 67.31) (xy 158.75 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9640b70a-e8e5-499a-a04a-45c242ddbe31")
 	)
 	(wire
 		(pts
@@ -1851,6 +1867,16 @@
 			(type default)
 		)
 		(uuid "a08f8b75-a763-4495-8026-dc228129a043")
+	)
+	(wire
+		(pts
+			(xy 147.32 63.5) (xy 147.32 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b26d2254-e45b-4be1-8bb3-35d946a0a04e")
 	)
 	(wire
 		(pts
@@ -1993,6 +2019,17 @@
 			(justify left)
 		)
 		(uuid "b69e0ede-643f-4ddc-8da8-0fc7a0157b7a")
+	)
+	(hierarchical_label "VBUS"
+		(shape input)
+		(at 147.32 63.5 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d306e1e6-40fc-4b0d-aa69-847a2fa9d715")
 	)
 	(symbol
 		(lib_id "Connector:USB_C_Receptacle")
