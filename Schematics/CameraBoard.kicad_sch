@@ -4,7 +4,115 @@
 	(generator_version "9.0")
 	(uuid "65068a32-f105-4204-b50e-234054c5a6d0")
 	(paper "A4")
-	(lib_symbols)
+	(lib_symbols
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 91.44 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4e1f462c-f8de-42a4-8952-7fc8e568fef2")
+	)
 	(junction
 		(at 77.47 129.54)
 		(diameter 0)
@@ -23,26 +131,6 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 146.05) (xy 40.64 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "064d53af-e348-4a09-97fc-193140b4feb3")
-	)
-	(wire
-		(pts
-			(xy 40.64 71.12) (xy 82.55 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "09208ee7-860f-4d91-8580-2c2428767556")
-	)
-	(wire
-		(pts
 			(xy 170.18 66.04) (xy 170.18 71.12)
 		)
 		(stroke
@@ -50,6 +138,46 @@
 			(type default)
 		)
 		(uuid "0bab21bd-500e-4847-ab57-a5b5c4f8bf10")
+	)
+	(wire
+		(pts
+			(xy 125.73 74.93) (xy 125.73 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f1ebec8-f80c-4450-b554-6cc693da44fc")
+	)
+	(wire
+		(pts
+			(xy 48.26 71.12) (xy 48.26 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a5c5d5f-d1f1-41e3-938b-536cbe2f1068")
+	)
+	(wire
+		(pts
+			(xy 157.48 36.83) (xy 158.75 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cec0bd2-d063-46ca-9ee9-576b36ffb39f")
+	)
+	(wire
+		(pts
+			(xy 77.47 129.54) (xy 91.44 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f1d57be-c73b-4d91-8aca-59ddda261277")
 	)
 	(wire
 		(pts
@@ -63,6 +191,16 @@
 	)
 	(wire
 		(pts
+			(xy 157.48 34.29) (xy 157.48 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a8d38af-638f-41d4-8482-6bf4c591ea45")
+	)
+	(wire
+		(pts
 			(xy 93.98 66.04) (xy 93.98 69.85)
 		)
 		(stroke
@@ -73,13 +211,13 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 73.66) (xy 80.01 66.04)
+			(xy 85.09 66.04) (xy 85.09 146.05)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3be9f69c-9ce0-4c22-89ec-c4504d341bfb")
+		(uuid "377ff555-cd17-4322-a658-5cf6b462f146")
 	)
 	(wire
 		(pts
@@ -113,23 +251,13 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 74.93) (xy 85.09 74.93)
+			(xy 91.44 129.54) (xy 130.81 129.54)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "732c2adc-06bd-4d4d-8cea-48072fc0444a")
-	)
-	(wire
-		(pts
-			(xy 120.65 129.54) (xy 120.65 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "77b54b39-adb1-442f-8551-b2f2507e07f6")
+		(uuid "7533d4a5-95d7-43cb-bbf5-f3cdcaf87fb8")
 	)
 	(wire
 		(pts
@@ -143,63 +271,63 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 143.51) (xy 80.01 146.05)
+			(xy 40.64 72.39) (xy 82.55 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8d311752-52af-4c4c-9563-c97ad8958c48")
+		(uuid "a6b094ee-ee98-4734-9c56-b429a6338d62")
 	)
 	(wire
 		(pts
-			(xy 115.57 146.05) (xy 115.57 73.66)
+			(xy 82.55 72.39) (xy 82.55 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "948821af-c3a1-451c-b777-bfcc647f931e")
+		(uuid "ae7c7351-f55f-40f5-9da4-76cc3262bd58")
 	)
 	(wire
 		(pts
-			(xy 115.57 73.66) (xy 80.01 73.66)
+			(xy 64.77 34.29) (xy 157.48 34.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bc17f3b9-d826-470d-98cd-8c9d3507a8f6")
+		(uuid "cc502484-3ecd-4988-bceb-7f6d0a56e471")
 	)
 	(wire
 		(pts
-			(xy 77.47 143.51) (xy 80.01 143.51)
+			(xy 40.64 146.05) (xy 40.64 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c0c03e1e-f3ca-484d-b0dc-884b6268cbf1")
+		(uuid "cc8924ed-12db-4eb5-91d6-be17da819af4")
 	)
 	(wire
 		(pts
-			(xy 85.09 74.93) (xy 85.09 66.04)
+			(xy 125.73 74.93) (xy 80.01 74.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d6c2ea69-c10f-43fc-9316-5a9bfcb78009")
+		(uuid "ced2b71c-e532-4ecf-985d-f4f6203e7636")
 	)
 	(wire
 		(pts
-			(xy 77.47 129.54) (xy 120.65 129.54)
+			(xy 80.01 74.93) (xy 80.01 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "dac99c28-71c2-4f2d-a3f1-0ef32ddc5269")
+		(uuid "ddd253a0-ff4f-4283-9b7d-6e3358e9445e")
 	)
 	(wire
 		(pts
@@ -210,6 +338,16 @@
 			(type default)
 		)
 		(uuid "dfe52292-3c16-4b4c-8aec-51657c1130bc")
+	)
+	(wire
+		(pts
+			(xy 91.44 146.05) (xy 91.44 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2db864b-e168-48a6-8f91-dc4e4f595d5c")
 	)
 	(wire
 		(pts
@@ -233,33 +371,150 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 71.12) (xy 82.55 66.04)
+			(xy 22.86 71.12) (xy 48.26 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f03de99f-dd31-4382-9649-713e6de4534e")
+		(uuid "f6c89c3b-060b-4474-a75f-d71fd4a350a3")
 	)
 	(wire
 		(pts
-			(xy 76.2 146.05) (xy 76.2 74.93)
+			(xy 130.81 129.54) (xy 130.81 147.32)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f295e94c-3c28-4612-b4b9-b26f15a3c765")
+		(uuid "fccaddda-4f67-4dd9-93c8-bd01caa9d361")
 	)
-	(wire
-		(pts
-			(xy 77.47 129.54) (xy 77.47 143.51)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 22.86 71.12 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6516d9a2-7a22-4ead-a961-8fa0a4915a61")
+		(property "Reference" "#FLG01"
+			(at 20.955 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
+		(property "Value" "PWR_FLAG"
+			(at 17.78 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 22.86 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 22.86 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 22.86 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "98808da3-77a5-451d-9e9d-39efcf821fff")
+		)
+		(instances
+			(project ""
+				(path "/65068a32-f105-4204-b50e-234054c5a6d0"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 111.76 147.32)
+		(size 41.91 39.37)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
 		(stroke
-			(width 0)
-			(type default)
+			(width 0.1524)
+			(type solid)
 		)
-		(uuid "f2d61ede-f88f-4f01-9624-491b238e46d4")
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "0f44c39c-84ca-4885-9561-99bc30f48163")
+		(property "Sheetname" "Camera_center"
+			(at 111.76 146.6084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Camera.kicad_sch"
+			(at 111.76 187.2746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "PWN_EN" input
+			(at 125.73 147.32 90)
+			(uuid "3d499fef-a1c6-4fee-a5e3-2953050bfa45")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CAM_UART_TX" input
+			(at 130.81 147.32 90)
+			(uuid "8575c217-63ee-4f4e-bfd5-df22148f9b27")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "CameraBoard"
+				(path "/65068a32-f105-4204-b50e-234054c5a6d0"
+					(page "10")
+				)
+			)
+		)
 	)
 	(sheet
 		(at 20.32 17.78)
@@ -296,7 +551,7 @@
 			)
 		)
 		(pin "VBAT" input
-			(at 46.99 66.04 270)
+			(at 48.26 66.04 270)
 			(uuid "320a4c9f-ea1f-497a-be3f-f0f86bd28bbd")
 			(effects
 				(font
@@ -427,26 +682,6 @@
 				(justify left)
 			)
 		)
-		(pin "UART_DEBUG_RX" input
-			(at 64.77 43.18 180)
-			(uuid "98a4e750-f103-4a0f-bbf2-e32a8af28473")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "UART_DEBUG_TX" input
-			(at 64.77 39.37 180)
-			(uuid "b2db13cd-5dd3-4bc1-b230-67dac720a9cc")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "VBUS" input
 			(at 64.77 34.29 180)
 			(uuid "b0fe58de-9fae-4756-85e7-5113c38b76d9")
@@ -528,8 +763,8 @@
 		)
 	)
 	(sheet
-		(at 107.95 146.05)
-		(size 35.56 41.91)
+		(at 63.5 146.05)
+		(size 41.91 39.37)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -542,9 +777,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "74e3c2e3-591c-4dbb-bedb-b7f7db2a7e7f")
-		(property "Sheetname" "Camera_center"
-			(at 107.95 145.3384 0)
+		(uuid "87d56ee5-98da-4fef-82d7-f6ca9a8fff80")
+		(property "Sheetname" "Camera_right"
+			(at 63.5 145.3384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -552,8 +787,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Camera_center.kicad_sch"
-			(at 107.95 188.5446 0)
+		(property "Sheetfile" "Camera.kicad_sch"
+			(at 63.5 186.0046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -561,9 +796,9 @@
 				(justify left top)
 			)
 		)
-		(pin "CAM_C_PWN_EN" input
-			(at 115.57 146.05 90)
-			(uuid "469b6e8a-6a2f-4dc6-a909-556ded299129")
+		(pin "PWN_EN" input
+			(at 85.09 146.05 90)
+			(uuid "1ed1f431-a421-4dcb-b564-8a23f91676bb")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -572,8 +807,8 @@
 			)
 		)
 		(pin "CAM_UART_TX" input
-			(at 120.65 146.05 90)
-			(uuid "09aafe1d-ccf6-4a5d-a539-d3b56ab8f46c")
+			(at 91.44 146.05 90)
+			(uuid "5dbc00f3-d17e-4f62-9e37-bc590c60c5c2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -584,7 +819,7 @@
 		(instances
 			(project "CameraBoard"
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0"
-					(page "6")
+					(page "9")
 				)
 			)
 		)
@@ -643,72 +878,20 @@
 				(justify left)
 			)
 		)
-		(instances
-			(project "CameraBoard"
-				(path "/65068a32-f105-4204-b50e-234054c5a6d0"
-					(page "8")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 63.5 146.05)
-		(size 39.37 41.91)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "bf3de135-4611-4c7d-8878-73765f0881dd")
-		(property "Sheetname" "Camera_right"
-			(at 63.5 145.3384 0)
+		(pin "VBUS" input
+			(at 158.75 36.83 180)
+			(uuid "4cd64697-221a-43ba-b8ae-ec63cde32242")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Camera_right.kicad_sch"
-			(at 63.5 188.5446 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "CAM_R_PWN_EN" input
-			(at 76.2 146.05 90)
-			(uuid "bfc4afa6-d3bd-4973-a176-d8fa8dd84465")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "CAM_UART_TX" input
-			(at 80.01 146.05 90)
-			(uuid "710301dc-7a6f-4d2f-9487-42926a323574")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(instances
 			(project "CameraBoard"
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0"
-					(page "5")
+					(page "8")
 				)
 			)
 		)
@@ -738,7 +921,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Camera_left.kicad_sch"
+		(property "Sheetfile" "Camera.kicad_sch"
 			(at 19.05 188.5446 0)
 			(effects
 				(font
@@ -747,7 +930,7 @@
 				(justify left top)
 			)
 		)
-		(pin "CAM_L_PWN_EN" input
+		(pin "PWN_EN" input
 			(at 40.64 146.05 90)
 			(uuid "b254656e-c9f9-4b7e-9bc1-40cf8a132fa3")
 			(effects

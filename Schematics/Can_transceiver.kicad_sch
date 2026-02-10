@@ -1532,7 +1532,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "2 pin Molex"
 			(at 176.53 106.6799 0)
 			(effects
 				(font
@@ -1560,6 +1560,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 173.99 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17644051"
 			(at 173.99 104.14 0)
 			(effects
 				(font
@@ -1601,7 +1610,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100nf"
 			(at 81.28 110.4899 0)
 			(effects
 				(font
@@ -1610,7 +1619,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 78.4352 113.03 0)
 			(effects
 				(font
@@ -1638,6 +1647,15 @@
 			)
 		)
 		(property "lcsc" "C6565120"
+			(at 77.47 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C49393646"
 			(at 77.47 109.22 0)
 			(effects
 				(font
@@ -1717,6 +1735,15 @@
 			)
 		)
 		(property "lcsc" "C12084"
+			(at 116.84 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1543812"
 			(at 116.84 107.95 0)
 			(effects
 				(font
@@ -1910,7 +1937,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "120R"
+		(property "Value" "120r"
 			(at 134.62 110.4899 0)
 			(effects
 				(font
@@ -1955,6 +1982,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C114245"
+			(at 132.08 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0117fe61-813c-403e-9de3-2fd99da79f02")
 		)
@@ -1989,7 +2025,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "2 pin Molex"
 			(at 176.53 115.5699 0)
 			(effects
 				(font
@@ -2017,6 +2053,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 173.99 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17644051"
 			(at 173.99 113.03 0)
 			(effects
 				(font

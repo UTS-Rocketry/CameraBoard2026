@@ -1035,12 +1035,6 @@
 		(uuid "627235c7-5b81-401d-95cc-601baf15d2de")
 	)
 	(junction
-		(at 203.2 97.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c116a36d-099f-47d6-86cd-54f4f6bdb6bc")
-	)
-	(junction
 		(at 127 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1064,25 +1058,13 @@
 		(color 0 0 0 0)
 		(uuid "ee91808b-c4b8-46a2-9a95-3af88d8f0dbd")
 	)
-	(junction
-		(at 106.68 90.17)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f5ed3ccc-e9b3-4394-9c30-20e227deb273")
+	(no_connect
+		(at 104.14 95.25)
+		(uuid "37e28350-8abc-4069-bdd5-e6cf90304b13")
 	)
 	(no_connect
 		(at 104.14 100.33)
 		(uuid "73ee73bb-a7a3-4b93-ab7e-a4772e644bc1")
-	)
-	(wire
-		(pts
-			(xy 104.14 95.25) (xy 106.68 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "062b7cef-9f87-4bdd-b37b-174b3dca0d7f")
 	)
 	(wire
 		(pts
@@ -1106,17 +1088,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 91.44) (xy 226.06 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "365992c7-0a39-4add-af7f-dc77f34275c7")
-	)
-	(wire
-		(pts
-			(xy 194.31 88.9) (xy 226.06 88.9)
+			(xy 182.88 91.44) (xy 214.63 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1146,16 +1118,6 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 97.79) (xy 223.52 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "57febac9-a036-4ceb-bd0b-b296c4e5a676")
-	)
-	(wire
-		(pts
 			(xy 139.7 97.79) (xy 153.67 97.79)
 		)
 		(stroke
@@ -1176,27 +1138,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 95.25) (xy 106.68 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6eb66a65-7d1e-41b9-b7a6-38d1494e1314")
-	)
-	(wire
-		(pts
-			(xy 226.06 101.6) (xy 226.06 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8527ace3-f4a0-4f01-9a0b-0c13202be923")
-	)
-	(wire
-		(pts
-			(xy 193.04 101.6) (xy 226.06 101.6)
+			(xy 173.99 96.52) (xy 214.63 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1226,16 +1168,6 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 97.79) (xy 203.2 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a5dbbca6-2f92-46ee-9c29-d6812605905d")
-	)
-	(wire
-		(pts
 			(xy 53.34 90.17) (xy 58.42 90.17)
 		)
 		(stroke
@@ -1256,7 +1188,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 90.17) (xy 113.03 90.17)
+			(xy 104.14 90.17) (xy 113.03 90.17)
 		)
 		(stroke
 			(width 0)
@@ -1276,16 +1208,6 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 90.17) (xy 106.68 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c2234016-0d5b-4825-8091-93dff53ea9f9")
-	)
-	(wire
-		(pts
 			(xy 139.7 90.17) (xy 153.67 90.17)
 		)
 		(stroke
@@ -1293,16 +1215,6 @@
 			(type default)
 		)
 		(uuid "c5b4adce-ea2c-4e2c-aa08-13594dff195f")
-	)
-	(wire
-		(pts
-			(xy 203.2 97.79) (xy 203.2 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c8503a11-c554-460d-8890-f96122d2a4b0")
 	)
 	(wire
 		(pts
@@ -1316,7 +1228,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 97.79) (xy 223.52 97.79)
+			(xy 182.88 93.98) (xy 214.63 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1334,7 +1246,17 @@
 		)
 		(uuid "fd40701a-4a44-4f53-9604-07e3ed129148")
 	)
-	(label "CAM_L_5V"
+	(label "CAM_5V"
+		(at 173.99 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "04ffb959-98f2-4835-b5db-7a64086f134a")
+	)
+	(label "CAM_5V"
 		(at 153.67 90.17 0)
 		(effects
 			(font
@@ -1342,17 +1264,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "0dbea993-5b2a-47c7-aec6-106dc9c046f1")
-	)
-	(label "CAM_L_5V"
-		(at 193.04 101.6 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "5faa350b-3c00-4297-88ca-5c30924b25a9")
+		(uuid "687bc4f5-2af6-4ecb-bde3-4fec0d5ce927")
 	)
 	(label ""
 		(at 116.84 90.17 0)
@@ -1366,7 +1278,7 @@
 	)
 	(hierarchical_label "CAM_UART_TX"
 		(shape input)
-		(at 194.31 88.9 180)
+		(at 182.88 91.44 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1375,7 +1287,7 @@
 		)
 		(uuid "44a43237-a755-4bd2-b357-a866f96cc3bc")
 	)
-	(hierarchical_label "CAM_L_PWN_EN"
+	(hierarchical_label "PWN_EN"
 		(shape input)
 		(at 53.34 95.25 180)
 		(effects
@@ -1404,7 +1316,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47u"
+		(property "Value" "47uf"
 			(at 130.81 95.2499 0)
 			(effects
 				(font
@@ -1440,14 +1352,31 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C16780"
+			(at 127 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
-			(uuid "77918c7f-033e-43cc-a1ce-9fcd630cdd39")
+			(uuid "f8643663-4a60-4c5e-9a26-9ac2dd0ac576")
 		)
 		(pin "1"
-			(uuid "84ce9c14-b4bd-4979-a385-aac96d315550")
+			(uuid "0ad85c50-5a5f-4986-ac25-a86d70fc5246")
 		)
 		(instances
-			(project "cameraBoardSchematic"
+			(project "CameraBoard"
+				(path "/65068a32-f105-4204-b50e-234054c5a6d0/0f44c39c-84ca-4885-9561-99bc30f48163"
+					(reference "C37")
+					(unit 1)
+				)
+				(path "/65068a32-f105-4204-b50e-234054c5a6d0/87d56ee5-98da-4fef-82d7-f6ca9a8fff80"
+					(reference "C33")
+					(unit 1)
+				)
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/e8bd3566-d4f2-43cd-9088-441e27788299"
 					(reference "C13")
 					(unit 1)
@@ -1474,7 +1403,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "1uf"
 			(at 62.23 87.6299 0)
 			(effects
 				(font
@@ -1510,14 +1439,31 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C28323"
+			(at 58.42 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
-			(uuid "d711a9af-fcdf-4ff8-916d-08fcf8b38f7a")
+			(uuid "a3e53653-45af-4c8a-ab6b-985aa70a5732")
 		)
 		(pin "1"
-			(uuid "dd8f8900-4992-4975-9668-2053b08fbb1e")
+			(uuid "7e80c165-2aae-47a7-9195-98c12c9f72d1")
 		)
 		(instances
-			(project ""
+			(project "CameraBoard"
+				(path "/65068a32-f105-4204-b50e-234054c5a6d0/0f44c39c-84ca-4885-9561-99bc30f48163"
+					(reference "C35")
+					(unit 1)
+				)
+				(path "/65068a32-f105-4204-b50e-234054c5a6d0/87d56ee5-98da-4fef-82d7-f6ca9a8fff80"
+					(reference "C23")
+					(unit 1)
+				)
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/e8bd3566-d4f2-43cd-9088-441e27788299"
 					(reference "C12")
 					(unit 1)
@@ -1543,7 +1489,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" ".1u"
+		(property "Value" "100nf"
 			(at 143.51 95.2499 0)
 			(effects
 				(font
@@ -1579,14 +1525,31 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C49678"
+			(at 139.7 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
-			(uuid "178853bf-97aa-4fa1-afb4-70d667a4f146")
+			(uuid "558886f3-7cf2-444e-87bc-4c39199d05f9")
 		)
 		(pin "1"
-			(uuid "c6aa68db-4487-431b-b01c-1c0a4662b4fd")
+			(uuid "5d6c312c-4070-402a-8660-bafcc830fe8a")
 		)
 		(instances
-			(project "cameraBoardSchematic"
+			(project "CameraBoard"
+				(path "/65068a32-f105-4204-b50e-234054c5a6d0/0f44c39c-84ca-4885-9561-99bc30f48163"
+					(reference "C38")
+					(unit 1)
+				)
+				(path "/65068a32-f105-4204-b50e-234054c5a6d0/87d56ee5-98da-4fef-82d7-f6ca9a8fff80"
+					(reference "C34")
+					(unit 1)
+				)
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/e8bd3566-d4f2-43cd-9088-441e27788299"
 					(reference "C15")
 					(unit 1)
@@ -1613,7 +1576,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "100kr"
 			(at 60.96 100.3299 0)
 			(effects
 				(font
@@ -1649,14 +1612,31 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C96346"
+			(at 58.42 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
-			(uuid "d7615480-0332-4724-b294-4b747a897d4b")
+			(uuid "fe39c8d4-635d-49fc-9a75-4340a30b25db")
 		)
 		(pin "1"
-			(uuid "f8af2a38-3a48-40c0-8a05-b661dbeb36af")
+			(uuid "8120a833-5d4f-41e9-a1ee-7d8c5628c9c8")
 		)
 		(instances
-			(project ""
+			(project "CameraBoard"
+				(path "/65068a32-f105-4204-b50e-234054c5a6d0/0f44c39c-84ca-4885-9561-99bc30f48163"
+					(reference "R8")
+					(unit 1)
+				)
+				(path "/65068a32-f105-4204-b50e-234054c5a6d0/87d56ee5-98da-4fef-82d7-f6ca9a8fff80"
+					(reference "R1")
+					(unit 1)
+				)
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/e8bd3566-d4f2-43cd-9088-441e27788299"
 					(reference "R2")
 					(unit 1)
@@ -1666,7 +1646,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
-		(at 231.14 91.44 0)
+		(at 219.71 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1675,7 +1655,7 @@
 		(fields_autoplaced yes)
 		(uuid "86c09065-c3aa-4724-b37b-f8e2d28a23a5")
 		(property "Reference" "Cam1"
-			(at 233.68 90.1699 0)
+			(at 222.25 92.7099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1684,7 +1664,7 @@
 			)
 		)
 		(property "Value" "Conn_01x03"
-			(at 233.68 92.7099 0)
+			(at 222.25 95.2499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1693,7 +1673,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical"
-			(at 231.14 91.44 0)
+			(at 219.71 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1702,7 +1682,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 231.14 91.44 0)
+			(at 219.71 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1711,7 +1691,16 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 231.14 91.44 0)
+			(at 219.71 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C131339"
+			(at 219.71 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1720,16 +1709,24 @@
 			)
 		)
 		(pin "1"
-			(uuid "08783ee2-4e84-4533-8589-ecc2d6b6d219")
+			(uuid "4c438bc4-2aa0-40ed-b018-2b2a6fa1bfe5")
 		)
 		(pin "2"
-			(uuid "129f2a29-bfbb-4d99-bb44-239df9d3939e")
+			(uuid "00bb9a8c-4274-4553-a5f4-7a7036275079")
 		)
 		(pin "3"
-			(uuid "9a95935d-4844-4da2-8db3-78d4c7cb6358")
+			(uuid "aeaa6590-e4de-4746-9a9a-cee50cf222b7")
 		)
 		(instances
-			(project ""
+			(project "CameraBoard"
+				(path "/65068a32-f105-4204-b50e-234054c5a6d0/0f44c39c-84ca-4885-9561-99bc30f48163"
+					(reference "Cam3")
+					(unit 1)
+				)
+				(path "/65068a32-f105-4204-b50e-234054c5a6d0/87d56ee5-98da-4fef-82d7-f6ca9a8fff80"
+					(reference "Cam2")
+					(unit 1)
+				)
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/e8bd3566-d4f2-43cd-9088-441e27788299"
 					(reference "Cam1")
 					(unit 1)
@@ -1793,10 +1790,18 @@
 			)
 		)
 		(pin "1"
-			(uuid "b8554760-ac5c-481e-8877-5f5d231238bb")
+			(uuid "69cc4890-a859-480b-b03f-ba21830a80ff")
 		)
 		(instances
-			(project ""
+			(project "CameraBoard"
+				(path "/65068a32-f105-4204-b50e-234054c5a6d0/0f44c39c-84ca-4885-9561-99bc30f48163"
+					(reference "#PWR074")
+					(unit 1)
+				)
+				(path "/65068a32-f105-4204-b50e-234054c5a6d0/87d56ee5-98da-4fef-82d7-f6ca9a8fff80"
+					(reference "#PWR058")
+					(unit 1)
+				)
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/e8bd3566-d4f2-43cd-9088-441e27788299"
 					(reference "#PWR010")
 					(unit 1)
@@ -1860,10 +1865,18 @@
 			)
 		)
 		(pin "1"
-			(uuid "868d1b8d-73b7-4aaf-9d6d-498f5737a2a7")
+			(uuid "9a080b8a-5f2e-449f-9164-b4af06cd04f1")
 		)
 		(instances
-			(project "cameraBoardSchematic"
+			(project "CameraBoard"
+				(path "/65068a32-f105-4204-b50e-234054c5a6d0/0f44c39c-84ca-4885-9561-99bc30f48163"
+					(reference "#PWR075")
+					(unit 1)
+				)
+				(path "/65068a32-f105-4204-b50e-234054c5a6d0/87d56ee5-98da-4fef-82d7-f6ca9a8fff80"
+					(reference "#PWR066")
+					(unit 1)
+				)
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/e8bd3566-d4f2-43cd-9088-441e27788299"
 					(reference "#PWR029")
 					(unit 1)
@@ -1889,7 +1902,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "1uf"
 			(at 116.84 95.2499 0)
 			(effects
 				(font
@@ -1925,14 +1938,31 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C28323"
+			(at 113.03 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
-			(uuid "a7dc9d9f-dd82-47d5-8d72-0a7ac4c78a53")
+			(uuid "4b2aca04-d6e1-48af-bfb9-4297f9c63dca")
 		)
 		(pin "1"
-			(uuid "922684a1-c3c4-4cad-a54d-70b7155f35df")
+			(uuid "2bc17229-7c94-478f-97b2-0ea3756a8b0b")
 		)
 		(instances
-			(project ""
+			(project "CameraBoard"
+				(path "/65068a32-f105-4204-b50e-234054c5a6d0/0f44c39c-84ca-4885-9561-99bc30f48163"
+					(reference "C36")
+					(unit 1)
+				)
+				(path "/65068a32-f105-4204-b50e-234054c5a6d0/87d56ee5-98da-4fef-82d7-f6ca9a8fff80"
+					(reference "C32")
+					(unit 1)
+				)
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/e8bd3566-d4f2-43cd-9088-441e27788299"
 					(reference "C14")
 					(unit 1)
@@ -1996,10 +2026,18 @@
 			)
 		)
 		(pin "1"
-			(uuid "54a3cbf3-b64c-4441-a00f-5360d58d35d1")
+			(uuid "332cc67f-f672-4a99-8d6e-f240741995c0")
 		)
 		(instances
-			(project "cameraBoardSchematic"
+			(project "CameraBoard"
+				(path "/65068a32-f105-4204-b50e-234054c5a6d0/0f44c39c-84ca-4885-9561-99bc30f48163"
+					(reference "#PWR076")
+					(unit 1)
+				)
+				(path "/65068a32-f105-4204-b50e-234054c5a6d0/87d56ee5-98da-4fef-82d7-f6ca9a8fff80"
+					(reference "#PWR070")
+					(unit 1)
+				)
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/e8bd3566-d4f2-43cd-9088-441e27788299"
 					(reference "#PWR011")
 					(unit 1)
@@ -2102,26 +2140,43 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C2681320"
+			(at 88.9 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
-			(uuid "eecc109f-cb85-4853-8ece-d4ab3ed38306")
+			(uuid "cb0b136a-cca2-49b8-924c-b8db89f0a4a0")
 		)
 		(pin "4"
-			(uuid "96718b3a-ccac-4e35-839e-39cdf5b71ce4")
+			(uuid "56f2212d-7393-4560-bf1c-785e62b20a49")
 		)
 		(pin "2"
-			(uuid "885242ac-e630-4819-b832-c2413dd17f87")
+			(uuid "be756341-6d4b-4b47-abf9-3f5dbdcff2a2")
 		)
 		(pin "1"
-			(uuid "50880f46-01b2-41d2-8979-2a3991f29fd9")
+			(uuid "703b1832-363d-471d-8b36-7be753da3e1c")
 		)
 		(pin "3"
-			(uuid "4bbf761a-492a-459f-b155-3f0b979c5a5f")
+			(uuid "28f47565-ffd1-4e02-ac98-ce55c3c12ace")
 		)
 		(pin "5"
-			(uuid "89238997-793a-4e53-9787-fe14d68589a3")
+			(uuid "47192eac-776a-477d-aa30-1ee9f3ee9a19")
 		)
 		(instances
-			(project ""
+			(project "CameraBoard"
+				(path "/65068a32-f105-4204-b50e-234054c5a6d0/0f44c39c-84ca-4885-9561-99bc30f48163"
+					(reference "U7")
+					(unit 1)
+				)
+				(path "/65068a32-f105-4204-b50e-234054c5a6d0/87d56ee5-98da-4fef-82d7-f6ca9a8fff80"
+					(reference "U4")
+					(unit 1)
+				)
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/e8bd3566-d4f2-43cd-9088-441e27788299"
 					(reference "U2")
 					(unit 1)
@@ -2131,7 +2186,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 193.04 97.79 270)
+		(at 182.88 93.98 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2140,7 +2195,7 @@
 		(fields_autoplaced yes)
 		(uuid "b745e2e2-1795-4826-ad17-b00caf7c9252")
 		(property "Reference" "#PWR015"
-			(at 186.69 97.79 0)
+			(at 176.53 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2149,7 +2204,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 189.23 97.7899 90)
+			(at 179.07 93.9799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2158,7 +2213,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 193.04 97.79 0)
+			(at 182.88 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2167,7 +2222,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 193.04 97.79 0)
+			(at 182.88 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2176,7 +2231,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 193.04 97.79 0)
+			(at 182.88 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2185,10 +2240,18 @@
 			)
 		)
 		(pin "1"
-			(uuid "0d0004ee-8e58-4735-a2b5-7562885b21cf")
+			(uuid "3d6285f4-5174-40b3-ae8e-d10c6c1159f7")
 		)
 		(instances
-			(project ""
+			(project "CameraBoard"
+				(path "/65068a32-f105-4204-b50e-234054c5a6d0/0f44c39c-84ca-4885-9561-99bc30f48163"
+					(reference "#PWR077")
+					(unit 1)
+				)
+				(path "/65068a32-f105-4204-b50e-234054c5a6d0/87d56ee5-98da-4fef-82d7-f6ca9a8fff80"
+					(reference "#PWR071")
+					(unit 1)
+				)
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/e8bd3566-d4f2-43cd-9088-441e27788299"
 					(reference "#PWR015")
 					(unit 1)
@@ -2252,10 +2315,18 @@
 			)
 		)
 		(pin "1"
-			(uuid "a910331d-fbcc-40c5-827e-95c2bf191f3f")
+			(uuid "b3b5b03e-34dc-4ce3-9458-4e6c2c542907")
 		)
 		(instances
-			(project "cameraBoardSchematic"
+			(project "CameraBoard"
+				(path "/65068a32-f105-4204-b50e-234054c5a6d0/0f44c39c-84ca-4885-9561-99bc30f48163"
+					(reference "#PWR072")
+					(unit 1)
+				)
+				(path "/65068a32-f105-4204-b50e-234054c5a6d0/87d56ee5-98da-4fef-82d7-f6ca9a8fff80"
+					(reference "#PWR039")
+					(unit 1)
+				)
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/e8bd3566-d4f2-43cd-9088-441e27788299"
 					(reference "#PWR023")
 					(unit 1)
@@ -2319,10 +2390,18 @@
 			)
 		)
 		(pin "1"
-			(uuid "6c3a189e-2ccc-43dd-a328-894b6c8817e7")
+			(uuid "bd90958a-36f6-4e81-ac37-0e0099671142")
 		)
 		(instances
-			(project "cameraBoardSchematic"
+			(project "CameraBoard"
+				(path "/65068a32-f105-4204-b50e-234054c5a6d0/0f44c39c-84ca-4885-9561-99bc30f48163"
+					(reference "#PWR073")
+					(unit 1)
+				)
+				(path "/65068a32-f105-4204-b50e-234054c5a6d0/87d56ee5-98da-4fef-82d7-f6ca9a8fff80"
+					(reference "#PWR046")
+					(unit 1)
+				)
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/e8bd3566-d4f2-43cd-9088-441e27788299"
 					(reference "#PWR07")
 					(unit 1)
