@@ -446,25 +446,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at -10.16 10.922 0)
+			(property "Reference" "U3"
+				(at 0 15.24 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
 			(property "Value" "TPS22917DBVR"
-				(at -10.16 -12.7 0)
+				(at 0 12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
-			(property "Footprint" "SOT95P280X145-6N"
+			(property "Footprint" "myFootprints:SOT95P280X145-6N"
 				(at 0 0 0)
 				(effects
 					(font
@@ -533,6 +531,15 @@
 					(hide yes)
 				)
 			)
+			(property "LCSC" "C2681320"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
 			(property "ki_locked" ""
 				(at 0 0 0)
 				(effects
@@ -590,24 +597,6 @@
 					)
 				)
 				(pin output line
-					(at 15.24 7.62 180)
-					(length 5.08)
-					(name "VOUT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin output line
 					(at 15.24 2.54 180)
 					(length 5.08)
 					(name "QOD"
@@ -654,6 +643,26 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(symbol "TPS22917DBVR_1_0"
+				(pin power_out line
+					(at 15.24 7.62 180)
+					(length 5.08)
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -789,131 +798,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+5V"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+5V"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+5V\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+5V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+5V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -1023,10 +907,16 @@
 		(uuid "04e1ca7f-9eed-4f40-8540-4ddc61291e7b")
 	)
 	(junction
-		(at 139.7 90.17)
+		(at 127 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "219a46e8-ef71-4ef9-b258-f9e174623437")
+		(uuid "0ab1dd8d-8d8c-4638-820b-e91fe603cce6")
+	)
+	(junction
+		(at 114.3 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5f1eb5bc-53e9-44e9-90b9-8046e9b6e550")
 	)
 	(junction
 		(at 58.42 82.55)
@@ -1035,28 +925,22 @@
 		(uuid "627235c7-5b81-401d-95cc-601baf15d2de")
 	)
 	(junction
+		(at 137.16 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "62dd5b4c-1d8b-44d9-9c5e-62102330c322")
+	)
+	(junction
+		(at 137.16 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7b366a03-a2a9-4c73-9d27-313f7a54a307")
+	)
+	(junction
 		(at 127 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d194e757-bbbd-4fb7-8562-9ac9b709e3ba")
-	)
-	(junction
-		(at 127 97.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dbd801c1-2da9-4fb1-84a9-5db979b69706")
-	)
-	(junction
-		(at 113.03 90.17)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dd3680d9-8698-4da2-936d-dc80c6e0b447")
-	)
-	(junction
-		(at 139.7 97.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ee91808b-c4b8-46a2-9a95-3af88d8f0dbd")
+		(uuid "bf107732-ec60-44a1-bed4-9d0714d8044b")
 	)
 	(no_connect
 		(at 104.14 95.25)
@@ -1065,6 +949,16 @@
 	(no_connect
 		(at 104.14 100.33)
 		(uuid "73ee73bb-a7a3-4b93-ab7e-a4772e644bc1")
+	)
+	(wire
+		(pts
+			(xy 114.3 90.17) (xy 127 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1026e0e8-a4e7-4c9a-8d01-d81bebe7a0e9")
 	)
 	(wire
 		(pts
@@ -1078,6 +972,16 @@
 	)
 	(wire
 		(pts
+			(xy 165.1 96.52) (xy 214.63 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c04df46-3d34-48e4-9878-6b5139a2b7be")
+	)
+	(wire
+		(pts
 			(xy 58.42 95.25) (xy 73.66 95.25)
 		)
 		(stroke
@@ -1085,6 +989,16 @@
 			(type default)
 		)
 		(uuid "32f5d478-c6e2-44e9-850e-c47ce4d8ade3")
+	)
+	(wire
+		(pts
+			(xy 114.3 97.79) (xy 127 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d0807fc-ad4b-4bee-abee-791dbc1de6e9")
 	)
 	(wire
 		(pts
@@ -1098,33 +1012,13 @@
 	)
 	(wire
 		(pts
-			(xy 127 90.17) (xy 139.7 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "48f9ba98-4293-4079-aa18-3771a198ce08")
-	)
-	(wire
-		(pts
-			(xy 50.8 82.55) (xy 58.42 82.55)
+			(xy 46.99 82.55) (xy 58.42 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "4b2b9766-2fae-4e9c-82ec-61b605574837")
-	)
-	(wire
-		(pts
-			(xy 139.7 97.79) (xy 153.67 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "59007525-552f-4382-beb5-da64574dcf85")
 	)
 	(wire
 		(pts
@@ -1138,23 +1032,33 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 96.52) (xy 214.63 96.52)
+			(xy 137.16 97.79) (xy 153.67 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8d57807e-11d2-44f4-8c3a-0a0943b3f1cd")
+		(uuid "92743521-7070-48ac-9b2c-e532fc06d26e")
 	)
 	(wire
 		(pts
-			(xy 113.03 97.79) (xy 127 97.79)
+			(xy 165.1 90.17) (xy 165.1 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "980470fc-8301-4e2e-8f89-f48ae2aa5a33")
+		(uuid "95e25c18-d80c-4777-9bc6-c0acc161666d")
+	)
+	(wire
+		(pts
+			(xy 127 97.79) (xy 137.16 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9733e37c-b1b2-4996-8b2d-c2680007a0c8")
 	)
 	(wire
 		(pts
@@ -1178,23 +1082,23 @@
 	)
 	(wire
 		(pts
-			(xy 127 97.79) (xy 139.7 97.79)
+			(xy 127 90.17) (xy 137.16 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ac3946ae-910b-46b6-a37b-b01680988c6b")
+		(uuid "b2a90d3a-c305-4acf-999a-903e6b6603d1")
 	)
 	(wire
 		(pts
-			(xy 104.14 90.17) (xy 113.03 90.17)
+			(xy 104.14 90.17) (xy 114.3 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b55cf7df-7bd3-425f-8018-79e7a7a821f4")
+		(uuid "b5a040cf-62dd-4606-9665-6b0d2a8a823d")
 	)
 	(wire
 		(pts
@@ -1208,13 +1112,13 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 90.17) (xy 153.67 90.17)
+			(xy 137.16 90.17) (xy 165.1 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c5b4adce-ea2c-4e2c-aa08-13594dff195f")
+		(uuid "d56f81a0-1c20-4a18-9d36-b88fb6e55817")
 	)
 	(wire
 		(pts
@@ -1235,36 +1139,6 @@
 			(type default)
 		)
 		(uuid "f5ec2b25-ec44-4d9f-97a7-90b5d1f9a36d")
-	)
-	(wire
-		(pts
-			(xy 113.03 90.17) (xy 127 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fd40701a-4a44-4f53-9604-07e3ed129148")
-	)
-	(label "CAM_5V"
-		(at 173.99 96.52 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "04ffb959-98f2-4835-b5db-7a64086f134a")
-	)
-	(label "CAM_5V"
-		(at 153.67 90.17 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "687bc4f5-2af6-4ecb-bde3-4fec0d5ce927")
 	)
 	(label ""
 		(at 116.84 90.17 0)
@@ -1287,6 +1161,17 @@
 		)
 		(uuid "44a43237-a755-4bd2-b357-a866f96cc3bc")
 	)
+	(hierarchical_label "Cam5v"
+		(shape input)
+		(at 46.99 82.55 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6b2fd92f-6392-49f1-8f32-d9a7fb0aade8")
+	)
 	(hierarchical_label "PWN_EN"
 		(shape input)
 		(at 53.34 95.25 180)
@@ -1300,15 +1185,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 127 93.98 0)
+		(at 137.16 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "0b728544-f33d-4066-9b67-ee4c695dddd9")
-		(property "Reference" "C13"
-			(at 130.81 92.7099 0)
+		(property "Reference" "C20"
+			(at 140.97 92.7099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1317,7 +1202,7 @@
 			)
 		)
 		(property "Value" "47uf"
-			(at 130.81 95.2499 0)
+			(at 140.97 95.2499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1326,7 +1211,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 127.9652 97.79 0)
+			(at 138.1252 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1335,7 +1220,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 127 93.98 0)
+			(at 137.16 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1344,7 +1229,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 127 93.98 0)
+			(at 137.16 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1353,7 +1238,7 @@
 			)
 		)
 		(property "LCSC" "C16780"
-			(at 127 93.98 0)
+			(at 137.16 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1370,15 +1255,15 @@
 		(instances
 			(project "CameraBoard"
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/0f44c39c-84ca-4885-9561-99bc30f48163"
-					(reference "C37")
+					(reference "C29")
 					(unit 1)
 				)
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/87d56ee5-98da-4fef-82d7-f6ca9a8fff80"
-					(reference "C33")
+					(reference "C25")
 					(unit 1)
 				)
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/e8bd3566-d4f2-43cd-9088-441e27788299"
-					(reference "C13")
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -1394,7 +1279,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0f4c85a2-8c89-4d87-923e-44c8d9afbb58")
-		(property "Reference" "C12"
+		(property "Reference" "C18"
 			(at 62.23 85.0899 0)
 			(effects
 				(font
@@ -1457,7 +1342,7 @@
 		(instances
 			(project "CameraBoard"
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/0f44c39c-84ca-4885-9561-99bc30f48163"
-					(reference "C35")
+					(reference "C27")
 					(unit 1)
 				)
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/87d56ee5-98da-4fef-82d7-f6ca9a8fff80"
@@ -1465,7 +1350,7 @@
 					(unit 1)
 				)
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/e8bd3566-d4f2-43cd-9088-441e27788299"
-					(reference "C12")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -1473,15 +1358,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 139.7 93.98 0)
+		(at 114.3 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "46294c8d-41d4-4ed6-91d7-14e2bd215fe9")
-		(property "Reference" "C15"
-			(at 143.51 92.7099 0)
+		(property "Reference" "C21"
+			(at 118.11 92.7099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1490,7 +1375,7 @@
 			)
 		)
 		(property "Value" "100nf"
-			(at 143.51 95.2499 0)
+			(at 118.11 95.2499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1499,7 +1384,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 140.6652 97.79 0)
+			(at 115.2652 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1508,7 +1393,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 139.7 93.98 0)
+			(at 114.3 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1517,7 +1402,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 139.7 93.98 0)
+			(at 114.3 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1526,7 +1411,7 @@
 			)
 		)
 		(property "LCSC" "C49678"
-			(at 139.7 93.98 0)
+			(at 114.3 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1543,15 +1428,15 @@
 		(instances
 			(project "CameraBoard"
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/0f44c39c-84ca-4885-9561-99bc30f48163"
-					(reference "C38")
+					(reference "C30")
 					(unit 1)
 				)
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/87d56ee5-98da-4fef-82d7-f6ca9a8fff80"
-					(reference "C34")
+					(reference "C26")
 					(unit 1)
 				)
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/e8bd3566-d4f2-43cd-9088-441e27788299"
-					(reference "C15")
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -1567,7 +1452,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5fbefb7f-9903-47c9-8f5c-3e963c51c192")
-		(property "Reference" "R2"
+		(property "Reference" "R5"
 			(at 60.96 97.7899 0)
 			(effects
 				(font
@@ -1630,15 +1515,15 @@
 		(instances
 			(project "CameraBoard"
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/0f44c39c-84ca-4885-9561-99bc30f48163"
-					(reference "R8")
+					(reference "R10")
 					(unit 1)
 				)
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/87d56ee5-98da-4fef-82d7-f6ca9a8fff80"
-					(reference "R1")
+					(reference "R9")
 					(unit 1)
 				)
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/e8bd3566-d4f2-43cd-9088-441e27788299"
-					(reference "R2")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -1744,7 +1629,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "886ad502-d34b-4cd1-a302-35f7c6ad4b23")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR054"
 			(at 57.15 102.87 0)
 			(effects
 				(font
@@ -1795,15 +1680,15 @@
 		(instances
 			(project "CameraBoard"
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/0f44c39c-84ca-4885-9561-99bc30f48163"
-					(reference "#PWR074")
+					(reference "#PWR075")
 					(unit 1)
 				)
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/87d56ee5-98da-4fef-82d7-f6ca9a8fff80"
-					(reference "#PWR058")
+					(reference "#PWR069")
 					(unit 1)
 				)
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/e8bd3566-d4f2-43cd-9088-441e27788299"
-					(reference "#PWR010")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -1819,7 +1704,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9c418ecb-b70f-4c3a-92fd-5fe3c083aa3d")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR055"
 			(at 118.11 105.41 0)
 			(effects
 				(font
@@ -1870,15 +1755,15 @@
 		(instances
 			(project "CameraBoard"
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/0f44c39c-84ca-4885-9561-99bc30f48163"
-					(reference "#PWR075")
+					(reference "#PWR076")
 					(unit 1)
 				)
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/87d56ee5-98da-4fef-82d7-f6ca9a8fff80"
-					(reference "#PWR066")
+					(reference "#PWR070")
 					(unit 1)
 				)
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/e8bd3566-d4f2-43cd-9088-441e27788299"
-					(reference "#PWR029")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -1886,15 +1771,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 113.03 93.98 0)
+		(at 127 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "a31d2c31-353d-4d74-a5a1-7cf61cc2d25d")
-		(property "Reference" "C14"
-			(at 116.84 92.7099 0)
+		(property "Reference" "C19"
+			(at 130.81 92.7099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1903,7 +1788,7 @@
 			)
 		)
 		(property "Value" "1uf"
-			(at 116.84 95.2499 0)
+			(at 130.81 95.2499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1912,7 +1797,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 113.9952 97.79 0)
+			(at 127.9652 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1921,7 +1806,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 113.03 93.98 0)
+			(at 127 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1930,7 +1815,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 113.03 93.98 0)
+			(at 127 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1939,7 +1824,7 @@
 			)
 		)
 		(property "LCSC" "C28323"
-			(at 113.03 93.98 0)
+			(at 127 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1956,15 +1841,15 @@
 		(instances
 			(project "CameraBoard"
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/0f44c39c-84ca-4885-9561-99bc30f48163"
-					(reference "C36")
+					(reference "C28")
 					(unit 1)
 				)
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/87d56ee5-98da-4fef-82d7-f6ca9a8fff80"
-					(reference "C32")
+					(reference "C24")
 					(unit 1)
 				)
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/e8bd3566-d4f2-43cd-9088-441e27788299"
-					(reference "C14")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -1980,7 +1865,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a5efc015-4b4f-4187-ab8e-7a5b5f63d6b7")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR056"
 			(at 160.02 97.79 0)
 			(effects
 				(font
@@ -2031,15 +1916,15 @@
 		(instances
 			(project "CameraBoard"
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/0f44c39c-84ca-4885-9561-99bc30f48163"
-					(reference "#PWR076")
+					(reference "#PWR077")
 					(unit 1)
 				)
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/87d56ee5-98da-4fef-82d7-f6ca9a8fff80"
-					(reference "#PWR070")
+					(reference "#PWR071")
 					(unit 1)
 				)
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/e8bd3566-d4f2-43cd-9088-441e27788299"
-					(reference "#PWR011")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -2055,7 +1940,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a7ba0b7c-d9e9-44cb-a1be-3da22ec711b9")
-		(property "Reference" "U2"
+		(property "Reference" "U3"
 			(at 88.9 82.55 0)
 			(effects
 				(font
@@ -2170,15 +2055,15 @@
 		(instances
 			(project "CameraBoard"
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/0f44c39c-84ca-4885-9561-99bc30f48163"
-					(reference "U7")
+					(reference "U6")
 					(unit 1)
 				)
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/87d56ee5-98da-4fef-82d7-f6ca9a8fff80"
-					(reference "U4")
+					(reference "U5")
 					(unit 1)
 				)
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/e8bd3566-d4f2-43cd-9088-441e27788299"
-					(reference "U2")
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -2194,7 +2079,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b745e2e2-1795-4826-ad17-b00caf7c9252")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR057"
 			(at 176.53 93.98 0)
 			(effects
 				(font
@@ -2245,90 +2130,15 @@
 		(instances
 			(project "CameraBoard"
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/0f44c39c-84ca-4885-9561-99bc30f48163"
-					(reference "#PWR077")
+					(reference "#PWR078")
 					(unit 1)
 				)
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/87d56ee5-98da-4fef-82d7-f6ca9a8fff80"
-					(reference "#PWR071")
-					(unit 1)
-				)
-				(path "/65068a32-f105-4204-b50e-234054c5a6d0/e8bd3566-d4f2-43cd-9088-441e27788299"
-					(reference "#PWR015")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 50.8 82.55 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bdacd951-a122-4cd4-b88e-3a2052dbea21")
-		(property "Reference" "#PWR023"
-			(at 54.61 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 46.99 82.5499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 50.8 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 50.8 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 50.8 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b3b5b03e-34dc-4ce3-9458-4e6c2c542907")
-		)
-		(instances
-			(project "CameraBoard"
-				(path "/65068a32-f105-4204-b50e-234054c5a6d0/0f44c39c-84ca-4885-9561-99bc30f48163"
 					(reference "#PWR072")
 					(unit 1)
 				)
-				(path "/65068a32-f105-4204-b50e-234054c5a6d0/87d56ee5-98da-4fef-82d7-f6ca9a8fff80"
-					(reference "#PWR039")
-					(unit 1)
-				)
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/e8bd3566-d4f2-43cd-9088-441e27788299"
-					(reference "#PWR023")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -2344,7 +2154,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f422cec2-7f33-4243-ab9f-218c9a86c643")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR053"
 			(at 46.99 90.17 0)
 			(effects
 				(font
@@ -2395,15 +2205,15 @@
 		(instances
 			(project "CameraBoard"
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/0f44c39c-84ca-4885-9561-99bc30f48163"
-					(reference "#PWR073")
+					(reference "#PWR074")
 					(unit 1)
 				)
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/87d56ee5-98da-4fef-82d7-f6ca9a8fff80"
-					(reference "#PWR046")
+					(reference "#PWR068")
 					(unit 1)
 				)
 				(path "/65068a32-f105-4204-b50e-234054c5a6d0/e8bd3566-d4f2-43cd-9088-441e27788299"
-					(reference "#PWR07")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
