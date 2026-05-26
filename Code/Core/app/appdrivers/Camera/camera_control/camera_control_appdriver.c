@@ -1,15 +1,14 @@
 #include "camera_control_appdriver.h"
 
-#include <string.h>
-
 static USART_TypeDef *camera_control_uart = NULL;
 static uint32_t camera_control_tx_timeout_ms = CAMERA_CONTROL_DEFAULT_TX_TIMEOUT_MS;
-static CameraControl_Packet_t camera_control_packets[CAMERA_CONTROL_COMMAND_COUNT];
 static bool camera_control_initialized = false;
 
-static bool CameraControl_IsValidCommand(CameraControl_Command_t command)
+static bool CameraControl_IsValidRunCamTxArgument(CameraControl_RunCamTxArgument_t argument)
 {
-    return ((uint32_t)command < (uint32_t)CAMERA_CONTROL_COMMAND_COUNT);
+    return (argument == CAMERA_CONTROL_RUNCAM_TX_ARGUMENT_WIFI) ||
+           (argument == CAMERA_CONTROL_RUNCAM_TX_ARGUMENT_RECORD) ||
+           (argument == CAMERA_CONTROL_RUNCAM_TX_ARGUMENT_MODE);
 }
 
 static uint32_t CameraControl_GetPeripheralClockHz(USART_TypeDef *uart)
@@ -157,12 +156,8 @@ CameraControl_Status_t CameraControl_AppDriver_Init(const CameraControl_Config_t
                                       ? CAMERA_CONTROL_DEFAULT_TX_TIMEOUT_MS
                                       : config->tx_timeout_ms;
 
-    for (uint32_t i = 0U; i < (uint32_t)CAMERA_CONTROL_COMMAND_COUNT; i++)
-    {
-        camera_control_packets[i].length = 0U;
-    }
-
     camera_control_initialized = true;
+
     return CAMERA_CONTROL_STATUS_OK;
 }
 
@@ -170,67 +165,11 @@ void CameraControl_AppDriver_DeInit(void)
 {
     camera_control_uart = NULL;
     camera_control_initialized = false;
-
-    for (uint32_t i = 0U; i < (uint32_t)CAMERA_CONTROL_COMMAND_COUNT; i++)
-    {
-        camera_control_packets[i].length = 0U;
-    }
 }
 
 bool CameraControl_AppDriver_IsReady(void)
 {
     return (camera_control_initialized && (camera_control_uart != NULL));
-}
-
-CameraControl_Status_t CameraControl_AppDriver_SetCommandPacket(CameraControl_Command_t command,
-                                                                 const uint8_t *bytes,
-                                                                 uint8_t length)
-{
-    if (!CameraControl_IsValidCommand(command) ||
-        (bytes == NULL) ||
-        (length == 0U) ||
-        (length > CAMERA_CONTROL_MAX_PACKET_LEN))
-    {
-        return CAMERA_CONTROL_STATUS_INVALID_ARGUMENT;
-    }
-
-    (void)memcpy(camera_control_packets[(uint32_t)command].bytes, bytes, length);
-    camera_control_packets[(uint32_t)command].length = length;
-
-    return CAMERA_CONTROL_STATUS_OK;
-}
-
-CameraControl_Status_t CameraControl_AppDriver_ClearCommandPacket(CameraControl_Command_t command)
-{
-    if (!CameraControl_IsValidCommand(command))
-    {
-        return CAMERA_CONTROL_STATUS_INVALID_ARGUMENT;
-    }
-
-    camera_control_packets[(uint32_t)command].length = 0U;
-    return CAMERA_CONTROL_STATUS_OK;
-}
-
-CameraControl_Status_t CameraControl_AppDriver_SendCommand(CameraControl_Command_t command)
-{
-    if (!CameraControl_AppDriver_IsReady())
-    {
-        return CAMERA_CONTROL_STATUS_NOT_INITIALIZED;
-    }
-
-    if (!CameraControl_IsValidCommand(command))
-    {
-        return CAMERA_CONTROL_STATUS_INVALID_ARGUMENT;
-    }
-
-    const CameraControl_Packet_t *packet = &camera_control_packets[(uint32_t)command];
-
-    if (packet->length == 0U)
-    {
-        return CAMERA_CONTROL_STATUS_COMMAND_NOT_CONFIGURED;
-    }
-
-    return CameraControl_AppDriver_SendRaw(packet->bytes, packet->length);
 }
 
 CameraControl_Status_t CameraControl_AppDriver_SendRaw(const uint8_t *bytes, uint8_t length)
@@ -274,27 +213,58 @@ CameraControl_Status_t CameraControl_AppDriver_SendRaw(const uint8_t *bytes, uin
     return CAMERA_CONTROL_STATUS_OK;
 }
 
+uint8_t CameraControl_AppDriver_Crc8HighFirst(uint8_t crc, uint8_t data)
+{
+    crc ^= data;
+
+    for (uint8_t i = 0U; i < 8U; i++)
+    {
+        if ((crc & 0x80U) != 0U)
+        {
+            crc = (uint8_t)((crc << 1U) ^ 0x31U);
+        }
+        else
+        {
+            crc = (uint8_t)(crc << 1U);
+        }
+    }
+
+    return crc;
+}
+
+CameraControl_Status_t CameraControl_AppDriver_SendRunCamTxCommand(CameraControl_RunCamTxArgument_t argument)
+{
+    if (!CameraControl_IsValidRunCamTxArgument(argument))
+    {
+        return CAMERA_CONTROL_STATUS_INVALID_ARGUMENT;
+    }
+
+    uint8_t packet[CAMERA_CONTROL_RUNCAM_TX_PACKET_LEN] =
+    {
+        CAMERA_CONTROL_RUNCAM_TX_HEADER,
+        CAMERA_CONTROL_RUNCAM_TX_COMMAND_CAMERA_CONTROL,
+        (uint8_t)argument,
+        CAMERA_CONTROL_RUNCAM_TX_TAIL,
+        CAMERA_CONTROL_RUNCAM_TX_TAIL
+    };
+    uint8_t crc = 0U;
+
+    for (uint8_t i = 0U; i < 4U; i++)
+    {
+        crc = CameraControl_AppDriver_Crc8HighFirst(crc, packet[i]);
+    }
+
+    packet[3] = crc;
+
+    return CameraControl_AppDriver_SendRaw(packet, (uint8_t)sizeof(packet));
+}
+
 CameraControl_Status_t CameraControl_AppDriver_StartRecording(void)
 {
-    return CameraControl_AppDriver_SendCommand(CAMERA_CONTROL_COMMAND_START_RECORDING);
+    return CameraControl_AppDriver_SendRunCamTxCommand(CAMERA_CONTROL_RUNCAM_TX_ARGUMENT_RECORD);
 }
 
 CameraControl_Status_t CameraControl_AppDriver_StopRecording(void)
 {
-    return CameraControl_AppDriver_SendCommand(CAMERA_CONTROL_COMMAND_STOP_RECORDING);
-}
-
-CameraControl_Status_t CameraControl_AppDriver_ToggleRecording(void)
-{
-    return CameraControl_AppDriver_SendCommand(CAMERA_CONTROL_COMMAND_TOGGLE_RECORDING);
-}
-
-CameraControl_Status_t CameraControl_AppDriver_SetVideoMode(void)
-{
-    return CameraControl_AppDriver_SendCommand(CAMERA_CONTROL_COMMAND_SET_VIDEO_MODE);
-}
-
-CameraControl_Status_t CameraControl_AppDriver_SetPhotoMode(void)
-{
-    return CameraControl_AppDriver_SendCommand(CAMERA_CONTROL_COMMAND_SET_PHOTO_MODE);
+    return CameraControl_AppDriver_SendRunCamTxCommand(CAMERA_CONTROL_RUNCAM_TX_ARGUMENT_RECORD);
 }
