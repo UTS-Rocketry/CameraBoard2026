@@ -49,6 +49,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     Core/app/appdrivers/Camera/camera_control/camera_control_appdriver.c
     Core/app/appdrivers/Camera/camera_power/camera_power_appdriver.c
     Core/app/appdrivers/Status/status_led_appdriver.c
+    Core/app/application_layer/camera_board_app.c
 )
 
 # Add include paths
@@ -58,6 +59,7 @@ target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     Core/app/appdrivers/Camera/camera_control
     Core/app/appdrivers/Camera/camera_power
     Core/app/appdrivers/Status
+    Core/app/application_layer
 )
 
 # Add project symbols (macros)

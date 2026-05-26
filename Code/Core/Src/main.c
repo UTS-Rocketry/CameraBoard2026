@@ -21,6 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "camera_board_app.h"
 
 /* USER CODE END Includes */
 
@@ -94,6 +95,7 @@ int main(void)
   MX_CAN2_Init();
   MX_USB_OTG_FS_PCD_Init();
   /* USER CODE BEGIN 2 */
+  CameraBoard_AppInit();
 
   /* USER CODE END 2 */
 
@@ -104,6 +106,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+    CameraBoard_AppRun();
   }
   /* USER CODE END 3 */
 }
