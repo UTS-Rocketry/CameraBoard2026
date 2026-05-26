@@ -45,11 +45,19 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
 # Add sources to executable
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user sources here
+    Core/app/appdrivers/CAN/can_appdriver.c
+    Core/app/appdrivers/Camera/camera_control/camera_control_appdriver.c
+    Core/app/appdrivers/Camera/camera_power/camera_power_appdriver.c
+    Core/app/appdrivers/Status/status_led_appdriver.c
 )
 
 # Add include paths
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined include paths
+    Core/app/appdrivers/CAN
+    Core/app/appdrivers/Camera/camera_control
+    Core/app/appdrivers/Camera/camera_power
+    Core/app/appdrivers/Status
 )
 
 # Add project symbols (macros)
