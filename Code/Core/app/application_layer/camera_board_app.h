@@ -8,6 +8,8 @@ extern "C" {
 #include <stdbool.h>
 #include <stdint.h>
 
+#include "stm32f4xx_hal.h"
+
 typedef enum
 {
     CAMERA_BOARD_APP_STATE_UNINITIALIZED = 0,
@@ -21,6 +23,8 @@ typedef enum
 typedef enum
 {
     CAMERA_BOARD_APP_ERROR_NONE = 0,
+    CAMERA_BOARD_APP_ERROR_INVALID_CONFIG,
+    CAMERA_BOARD_APP_ERROR_OUTPUT_INIT,
     CAMERA_BOARD_APP_ERROR_CAMERA_CONTROL_INIT,
     CAMERA_BOARD_APP_ERROR_CAMERA_POWER_ENABLE,
     CAMERA_BOARD_APP_ERROR_START_RECORDING,
@@ -28,7 +32,13 @@ typedef enum
     CAMERA_BOARD_APP_ERROR_CAMERA_POWER_DISABLE
 } CameraBoard_AppError_t;
 
-void CameraBoard_AppInit(void);
+typedef struct
+{
+    UART_HandleTypeDef *camera_uart;
+    UART_HandleTypeDef *output_uart;
+} CameraBoard_AppConfig_t;
+
+void CameraBoard_AppInit(const CameraBoard_AppConfig_t *config);
 void CameraBoard_AppRun(void);
 CameraBoard_AppState_t CameraBoard_AppGetState(void);
 CameraBoard_AppError_t CameraBoard_AppGetError(void);

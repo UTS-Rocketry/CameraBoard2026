@@ -11,7 +11,6 @@ extern "C" {
 #include "stm32f4xx_hal.h"
 
 #define CAMERA_CONTROL_DEFAULT_TX_TIMEOUT_MS 50U
-#define CAMERA_CONTROL_DEFAULT_BAUD_RATE 9600U
 #define CAMERA_CONTROL_RUNCAM_TX_HEADER 0x55U
 #define CAMERA_CONTROL_RUNCAM_TX_TAIL 0xAAU
 #define CAMERA_CONTROL_RUNCAM_TX_PACKET_LEN 5U
@@ -21,9 +20,8 @@ typedef enum
     CAMERA_CONTROL_STATUS_OK = 0,
     CAMERA_CONTROL_STATUS_NOT_INITIALIZED,
     CAMERA_CONTROL_STATUS_INVALID_ARGUMENT,
-    CAMERA_CONTROL_STATUS_UNSUPPORTED_UART,
-    CAMERA_CONTROL_STATUS_UART_NOT_ENABLED,
-    CAMERA_CONTROL_STATUS_UART_TIMEOUT
+    CAMERA_CONTROL_STATUS_UART_TIMEOUT,
+    CAMERA_CONTROL_STATUS_UART_ERROR
 } CameraControl_Status_t;
 
 typedef enum
@@ -40,10 +38,8 @@ typedef enum
 
 typedef struct
 {
-    USART_TypeDef *uart;
-    uint32_t baud_rate;
+    UART_HandleTypeDef *huart;
     uint32_t tx_timeout_ms;
-    bool configure_uart;
 } CameraControl_Config_t;
 
 CameraControl_Status_t CameraControl_AppDriver_Init(const CameraControl_Config_t *config);
