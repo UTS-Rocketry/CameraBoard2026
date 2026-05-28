@@ -52,7 +52,16 @@ static CameraPower_Status_t CameraPower_SetSingle(CameraPower_Id_t camera, bool 
 
 void CameraPower_AppDriver_Init(void)
 {
-    (void)CameraPower_AppDriver_Disable(CAMERA_POWER_ID_ALL);
+    camera_power_enabled_mask = 0U;
+
+    for (uint8_t i = 0U; i < (uint8_t)(sizeof(camera_power_pin_map) / sizeof(camera_power_pin_map[0])); i++)
+    {
+        if (HAL_GPIO_ReadPin(camera_power_pin_map[i].port, camera_power_pin_map[i].pin) == GPIO_PIN_SET)
+        {
+            camera_power_enabled_mask |= camera_power_pin_map[i].mask;
+        }
+    }
+
     camera_power_initialized = true;
 }
 
@@ -62,7 +71,7 @@ CameraPower_Status_t CameraPower_AppDriver_Enable(CameraPower_Id_t camera)
 }
 
 CameraPower_Status_t CameraPower_AppDriver_Disable(CameraPower_Id_t camera)
-{
+{   
     return CameraPower_AppDriver_Set(camera, false);
 }
 

@@ -291,7 +291,8 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOC, CAM_L_PWN_EN_Pin|CAM_R_PWN_EN_Pin|CAM_C_PWN_EN_Pin|RGB_led_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOC, CAM_L_PWN_EN_Pin|CAM_R_PWN_EN_Pin|CAM_C_PWN_EN_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(GPIOC, RGB_led_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pins : CAM_L_PWN_EN_Pin CAM_R_PWN_EN_Pin CAM_C_PWN_EN_Pin RGB_led_Pin */
   GPIO_InitStruct.Pin = CAM_L_PWN_EN_Pin|CAM_R_PWN_EN_Pin|CAM_C_PWN_EN_Pin|RGB_led_Pin;
