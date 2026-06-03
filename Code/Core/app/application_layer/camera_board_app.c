@@ -24,6 +24,8 @@ static const char *CameraBoard_GetStateOutputLine(CameraBoard_AppState_t state)
             return "state: uninitialized";
         case CAMERA_BOARD_APP_STATE_BOOT_WAIT:
             return "state: boot_wait";
+        case CAMERA_BOARD_APP_STATE_PRE_RECORD_WAIT:
+            return "state: pre_record_wait";
         case CAMERA_BOARD_APP_STATE_RECORDING:
             return "state: recording";
         case CAMERA_BOARD_APP_STATE_POST_STOP_WAIT:
@@ -135,6 +137,7 @@ void CameraBoard_AppInit(const CameraBoard_AppConfig_t *config)
     }
 
     CameraBoard_OutputLine("power: cameras enabled");
+    camera_board_recording = true;
     CameraBoard_EnterState(CAMERA_BOARD_APP_STATE_BOOT_WAIT);
 }
 
@@ -151,6 +154,24 @@ void CameraBoard_AppRun(void)
                                        camera_board_state_entered_ms,
                                        CAMERA_BOARD_CAMERA_BOOT_DELAY_MS))
             {
+                if (CameraControl_AppDriver_StopRecording() != CAMERA_CONTROL_STATUS_OK)
+                {
+                    CameraBoard_EnterError(CAMERA_BOARD_APP_ERROR_STOP_RECORDING);
+                    return;
+                }
+
+                camera_board_recording = false;
+                CameraBoard_OutputLine("camera: stop auto-recording command sent");
+                StatusLed_AppDriver_SetState(STATUS_LED_STATE_IDLE);
+                CameraBoard_EnterState(CAMERA_BOARD_APP_STATE_PRE_RECORD_WAIT);
+            }
+            break;
+
+        case CAMERA_BOARD_APP_STATE_PRE_RECORD_WAIT:
+            if (CameraBoard_HasElapsed(now_ms,
+                                       camera_board_state_entered_ms,
+                                       CAMERA_BOARD_PRE_RECORD_DELAY_MS))
+            {
                 if (CameraControl_AppDriver_StartRecording() != CAMERA_CONTROL_STATUS_OK)
                 {
                     CameraBoard_EnterError(CAMERA_BOARD_APP_ERROR_START_RECORDING);
@@ -158,7 +179,7 @@ void CameraBoard_AppRun(void)
                 }
 
                 camera_board_recording = true;
-                CameraBoard_OutputLine("camera: start recording command sent");
+                CameraBoard_OutputLine("camera: test recording command sent");
                 StatusLed_AppDriver_SetState(STATUS_LED_STATE_RECORDING);
                 CameraBoard_EnterState(CAMERA_BOARD_APP_STATE_RECORDING);
             }
