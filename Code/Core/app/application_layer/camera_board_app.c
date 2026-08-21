@@ -6,6 +6,9 @@
 #include "camera_power_appdriver.h"
 #include "status_led_appdriver.h"
 
+/* Fixed safety sequence: let the cameras boot, then stop their auto-recording. */
+#define CAMERA_BOARD_AUTO_RECORD_STOP_DELAY_MS 5000U
+
 static CameraBoard_AppState_t camera_board_state = CAMERA_BOARD_APP_STATE_UNINITIALIZED;
 static CameraBoard_AppError_t camera_board_error = CAMERA_BOARD_APP_ERROR_NONE;
 static uint32_t camera_board_state_entered_ms = 0U;
@@ -152,7 +155,7 @@ void CameraBoard_AppRun(void)
         case CAMERA_BOARD_APP_STATE_BOOT_WAIT:
             if (CameraBoard_HasElapsed(now_ms,
                                        camera_board_state_entered_ms,
-                                       CAMERA_BOARD_CAMERA_BOOT_DELAY_MS))
+                                       CAMERA_BOARD_AUTO_RECORD_STOP_DELAY_MS))
             {
                 if (CameraControl_AppDriver_StopRecording() != CAMERA_CONTROL_STATUS_OK)
                 {
@@ -170,7 +173,7 @@ void CameraBoard_AppRun(void)
         case CAMERA_BOARD_APP_STATE_PRE_RECORD_WAIT:
             if (CameraBoard_HasElapsed(now_ms,
                                        camera_board_state_entered_ms,
-                                       CAMERA_BOARD_PRE_RECORD_DELAY_MS))
+                                       CAMERA_BOARD_START_DELAY_AFTER_AUTO_STOP_MS))
             {
                 if (CameraControl_AppDriver_StartRecording() != CAMERA_CONTROL_STATUS_OK)
                 {
@@ -179,7 +182,7 @@ void CameraBoard_AppRun(void)
                 }
 
                 camera_board_recording = true;
-                CameraBoard_OutputLine("camera: test recording command sent");
+                CameraBoard_OutputLine("camera: start recording command sent");
                 StatusLed_AppDriver_SetState(STATUS_LED_STATE_RECORDING);
                 CameraBoard_EnterState(CAMERA_BOARD_APP_STATE_RECORDING);
             }
@@ -197,7 +200,7 @@ void CameraBoard_AppRun(void)
                 }
 
                 camera_board_recording = false;
-                CameraBoard_OutputLine("camera: stop recording command sent");
+                CameraBoard_OutputLine("camera: stop recording command sent; saving to SD card");
                 StatusLed_AppDriver_SetState(STATUS_LED_STATE_IDLE);
                 CameraBoard_EnterState(CAMERA_BOARD_APP_STATE_POST_STOP_WAIT);
             }
@@ -206,9 +209,10 @@ void CameraBoard_AppRun(void)
         case CAMERA_BOARD_APP_STATE_POST_STOP_WAIT:
             if (CameraBoard_HasElapsed(now_ms,
                                        camera_board_state_entered_ms,
-                                       CAMERA_BOARD_POST_STOP_POWER_OFF_DELAY_MS))
+                                       CAMERA_BOARD_SD_SAVE_DELAY_MS))
             {
-#if CAMERA_BOARD_POWER_OFF_AFTER_RECORDING
+                CameraBoard_OutputLine("camera: SD card finalization guard time complete");
+#if CAMERA_BOARD_POWER_OFF_AFTER_SAVE
                 if (CameraPower_AppDriver_Disable(CAMERA_POWER_ID_ALL) != CAMERA_POWER_STATUS_OK)
                 {
                     CameraBoard_EnterError(CAMERA_BOARD_APP_ERROR_CAMERA_POWER_DISABLE);
