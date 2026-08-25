@@ -33,4 +33,4 @@ Thumbs.db
 .idea/
 *~
 .clangd
-build/
+build/Schematics/.history/

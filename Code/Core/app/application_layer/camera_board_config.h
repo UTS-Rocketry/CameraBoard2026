@@ -8,8 +8,8 @@
  * These two values are measured from the commands immediately before them.
  * 1000 milliseconds = 1 second.
  */
-#define CAMERA_BOARD_START_DELAY_AFTER_AUTO_STOP_MS     15000U
-#define CAMERA_BOARD_RECORD_DURATION_MS                 10000U
+#define CAMERA_BOARD_START_DELAY_AFTER_AUTO_STOP_MS     595000U
+#define CAMERA_BOARD_RECORD_DURATION_MS                 2000000U
 
 /*
  * The stop command starts the SD-card save immediately. This guard time only
