@@ -241,16 +241,6 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 111.76) (xy 120.65 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2e0fec7a-1b4b-4a16-855d-25c91f5d0af8")
-	)
-	(wire
-		(pts
 			(xy 186.69 60.96) (xy 191.77 60.96)
 		)
 		(stroke
@@ -268,6 +258,16 @@
 			(type default)
 		)
 		(uuid "3bce83b6-b141-40ec-a237-06386ec36df4")
+	)
+	(wire
+		(pts
+			(xy 104.14 109.22) (xy 120.65 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d78e922-1e24-4b88-9512-61c30613b833")
 	)
 	(wire
 		(pts
@@ -311,6 +311,16 @@
 	)
 	(wire
 		(pts
+			(xy 104.14 111.76) (xy 120.65 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67410a37-fc56-4133-81e9-905ef08993c0")
+	)
+	(wire
+		(pts
 			(xy 175.26 86.36) (xy 175.26 105.41)
 		)
 		(stroke
@@ -318,16 +328,6 @@
 			(type default)
 		)
 		(uuid "7533d4a5-95d7-43cb-bbf5-f3cdcaf87fb8")
-	)
-	(wire
-		(pts
-			(xy 104.14 114.3) (xy 120.65 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7a89ab2a-2d6b-4860-bac4-eaf8ad0e2edf")
 	)
 	(wire
 		(pts
@@ -698,7 +698,7 @@
 			)
 		)
 		(pin "CAN_RX_2" input
-			(at 120.65 111.76 180)
+			(at 120.65 109.22 180)
 			(uuid "5181ce95-2e81-4913-8548-781c1a1f2b17")
 			(effects
 				(font
@@ -708,7 +708,7 @@
 			)
 		)
 		(pin "CAN_TX_2" input
-			(at 120.65 114.3 180)
+			(at 120.65 111.76 180)
 			(uuid "3c18401e-6fb0-4362-b805-e885e5d2fc7c")
 			(effects
 				(font
@@ -794,7 +794,7 @@
 			)
 		)
 		(pin "CAN_RX_2" input
-			(at 104.14 114.3 0)
+			(at 104.14 109.22 0)
 			(uuid "bb81f01a-5b6b-4fd5-89a2-7e6e5497aceb")
 			(effects
 				(font
