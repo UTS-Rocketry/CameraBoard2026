@@ -1,6 +1,5 @@
-Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
+Reference,Val,Package,Mid X,Mid Y,Rotation,Layer
 BootSwitch1,SAMZO G4R0015010,SAMZO G4R0015010,116.7,-83.55,180,top
-C1,100nf,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,119.425,-114.325,-90,top
 C2,100nf,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,111.575,-91.75,90,top
 C3,2.2uf,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,92.15,-81,180,top
 C4,2.2uf,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,103.05,-85.45,180,top
@@ -10,7 +9,7 @@ C7,100nf,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,107.7,-71.3,0,top
 C8,1uf,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,91.575,-63.8875,0,top
 C9,100nf,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,91.575,-69.6875,0,top
 C10,100nf,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,106.25,-84.95,-90,top
-C11,100nf,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,108.65,-74.65,-90,top
+C11,100nf,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,108.8,-74.65,-90,top
 C12,1uf,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,94.575,-68.7875,90,top
 C13,100nf,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,96.575,-68.7875,90,top
 C14,18p,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,103.8,-68.26875,0,top
@@ -31,16 +30,29 @@ C28,1uf,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,80.255375,-124.78125,0,top
 C29,47uf,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,80.255375,-122.644625,0,top
 C30,100nf,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,80.255375,-120.644625,0,top
 C31,4.7u,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,92.1,-85.2,180,top
-D1,NeoPixel_THT,LED_Kingbright_AAA3528ESGCT,116.025,-114.325,0,top
+C32,100nf,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,88.95,-45.95,-90,top
+CAN_IN1,2 pin Molex,MOLEX_26013114,109.6,-53.8,180,top
+CAN_OUT1,2 pin Molex,MOLEX_26013114,101.2,-53.8,180,top
+Cam1,Conn_01x03,JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical,76.03869,-81.959375,-90,top
+Cam2,Conn_01x03,JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical,75.9,-99.25625,-90,top
+Cam3,Conn_01x03,JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical,75.9,-116.875,-90,top
 D2,D_Schottky,D_2114_3652Metric,90.8,-96.2,0,top
 D3,D_Schottky,D_2114_3652Metric,88,-89.4,90,top
 D4,SRV05-4.TCT,SOT95P280X145-6N,82.85,-68.225,-90,top
+D5,ws2812b,LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm,116.6,-113,0,top
 FB1,FerriteBead,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,92.575,-66.7875,-90,top
+J1,Microsemi_FlashPro-JTAG-10,PinHeader_2x05_P1.27mm_Vertical,93.2,-46.47,180,top
+J3,USB_C_Receptacle_USB2.0_16P,USB_C_Receptacle_HRO_TYPE-C-31-M-12,75.7,-67.675,-90,top
+JP1,SolderJumper_2_Open,SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm,114.275,-75,180,top
+J_BUCK_IN_A1,~,PinSocket_1x02_P2.54mm_Horizontal,87.2,-124.025,90,top
+J_BUCK_IN_B1,~,PinSocket_1x02_P2.54mm_Horizontal,100.6,-124.025,90,top
+J_BUCK_OUT_A1,~,PinSocket_1x02_P2.54mm_Horizontal,87.2,-101,90,top
+J_BUCK_OUT_B1,~,PinSocket_1x02_P2.54mm_Horizontal,100.6,-101,90,top
+PowerIn1,2 pin Molex,MOLEX_26013114,109.6,-124.37,0,top
 PowerLED1,RLED,LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder,115.0625,-104.75,-90,top
 R1,10kr,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,108.615,-92.75,0,top
 R2,100kr,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,110.83,-83.52,0,top
 R3,1kr,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,117.9625,-105.65,0,top
-R4,330r,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,111.775,-114.975,180,top
 R5,100kr,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,77.83869,-94.209375,0,top
 R6,120r,R_0603_1608Metric,117.46,-74.99,180,top
 R7,5.1kr,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,77.85,-74.025,0,top
